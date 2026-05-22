@@ -39,30 +39,8 @@ Almasi-Eateries
 Affordable, Healthy, Tasty Meals
 
 ## Location
-Bungoma Town, next to the Chief’s Office
+Nakuru Town, kenya.
 
-## Services Offered
-
-- Dine-in
-- Takeaway
-- Delivery
-- Single Rooms
-- Double Rooms
-- WiFi
-- Parking
-- Room Service
-
-## Signature Meals
-
-- Pilau
-- Biryani
-- Githeri
-
-## Room Pricing
-
-Ksh 1,000 – Ksh 2,500
-
----
 
 # Design Goals
 
@@ -111,15 +89,7 @@ The design direction focused on:
 
 ---
 
-# Typography
 
-## Heading Font
-Playfair Display
-
-## Body Font
-Poppins
-
----
 
 # Technologies Used
 
@@ -135,6 +105,129 @@ Poppins
 ---
 
 # Project Structure
+
+
+# Website Sections
+
+## 1. Navbar
+
+Contains:
+- Logo
+- Navigation links
+- Order/Booking button
+
+---
+
+## 2. Hero Section
+
+Highlights:
+- Main business slogan
+- Introduction text
+- Call-to-action buttons
+- Featured visuals
+
+---
+
+## 3. Weekly Offers Section
+
+Showcases:
+- Daily food promotions
+- Combo meals
+- Special discounts
+
+---
+
+## 4. Signature Meals Section
+
+Showcases:
+- Pilau
+- Biryani
+
+- Featured food imagery
+
+---
+
+## 5. Rooms Section
+
+Displays:
+- Single rooms
+- Double rooms
+- Pricing information
+- Amenities
+
+---
+
+## 6. Services Section
+
+Highlights:
+- WiFi
+- Parking
+- Room service
+- Delivery
+- Dine-in
+- Takeaway
+
+---
+
+## 7. Gallery Section
+
+Contains:
+- Food photography
+- Room photography
+- Business environment visuals
+
+---
+
+## 8. Contact Section
+
+Includes:
+- Phone numbers
+- WhatsApp integration
+- TikTok information
+- Location details
+
+---
+
+## 9. Footer
+
+Contains:
+- Quick links
+- Branding
+- Contact information
+- Social media links
+
+---
+
+# Responsive Design
+
+The website is designed to work across:
+
+- Mobile devices
+- Tablets
+- Laptops
+- Desktop screens
+
+Responsive techniques used include:
+
+- Flexible containers
+- CSS Grid layouts
+- Flexbox alignment
+- Media queries
+- Responsive typography
+- Responsive image sizing
+
+---
+
+# WhatsApp Integration
+
+The website integrates direct WhatsApp communication to allow customers to:
+
+- Place food orders
+- Inquire about rooms
+- Contact the business quickly
+
+---
+
 
 # Setup Instructions
 
@@ -160,6 +253,20 @@ Open the project using:
 
 ---
 
+# Contributions & Collaboration
+
+Contributions, feedback, and collaborative ideas are welcome to help improve the website design, responsiveness, accessibility, and overall user experience.
+
+Areas open for collaboration include:
+
+- UI/UX improvements
+- Responsive design optimization
+- Accessibility enhancements
+- Hospitality branding ideas
+- Menu and booking system expansion
+- Frontend performance optimization
+- Future backend integration
+
 ## To Contribute:
 
 1. **Fork the Repository:** Create your own copy of the project to work on.
@@ -178,3 +285,71 @@ bash
     git push origin feature/AmazingFeature
 
 5.  **Open a Pull Request:** Describe your changes and submit for review.
+
+
+
+# Future Improvements
+
+Potential future upgrades include:
+
+- Online booking system
+- Dynamic menu filtering
+- Shopping cart functionality
+- Customer review system
+- Google Maps integration
+- Backend integration
+- Admin dashboard
+- Facebook page integration
+- Online payment systems
+- Dark mode
+- Search functionality
+- Animated transitions
+- Food ordering dashboard
+- Customer reservation forms
+
+---
+
+# Deployment
+
+The website can be deployed using:
+
+- GitHub Pages
+- Vercel
+
+---
+
+# Contact Information
+
+## Phone Numbers
+
+- 0713968080
+- 0726829468
+
+## WhatsApp
+
+0713968080
+
+## TikTok
+
+Almasi-Eateries
+
+## Facebook
+
+The Almasi-Eateries (Coming Soon)
+
+---
+
+# Credits
+
+## Business Information
+
+Almasi-Eateries
+
+## Design & Development
+
+Aisha Wanjiru
+
+---
+
+# License
+This project is licensed under the MIT License.
