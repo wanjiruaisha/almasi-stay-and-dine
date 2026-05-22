@@ -62,7 +62,6 @@ The project included:
 - Competitor analysis of hospitality websites
 - UI/UX research for restaurant and hotel platforms
 - Responsive layout planning
-- Typography and spacing studies
 - Moodboard creation in Figma
 
 The design direction focused on:
@@ -100,7 +99,7 @@ The design direction focused on:
 - Media Queries
 - Figma
 - Git & GitHub
-- Vercel / Netlify
+- Vercel
 
 ---
 
