@@ -106,6 +106,26 @@ The design direction focused on:
 
 # Project Structure
 
+```txt
+Almasi-Eateries/
+│
+├── index.html
+├── menu.html
+├── rooms.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── assets/
+│   └── images/
+│
+└── README.md
+```
+
+---
+
+
 
 # Website Sections
 
