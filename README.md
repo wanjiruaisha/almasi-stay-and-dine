@@ -1,8 +1,8 @@
-# Almasi Eateries & Hotel Website
+# Almasi-Eateries
 
 ## Overview
 
-Almasi-Eateries is a responsive hospitality website designed to establish a modern online presence for a real upcoming business located in Nakuru Town, Kenya.
+Almasi-Eateries is a responsive hospitality website designed to establish a modern online presence for an upcoming business located in Nakuru Town, Kenya.
 
 The website showcases both restaurant and accommodation services, allowing customers to explore signature meals, room options, amenities, contact information, and ordering or booking options through phone calls and WhatsApp.
 
