@@ -191,9 +191,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 248, 239, 0.95);
+  background: rgba(36, 22, 14, 0.96);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(59, 36, 22, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
 }
 
@@ -212,7 +212,7 @@ a {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--brown);
+  color: var(--cream);
 
 }
 
@@ -230,6 +230,7 @@ a {
 
   transition: var(--transition);
   font-weight: 500;
+  color: var(--cream);
 
 }
 
