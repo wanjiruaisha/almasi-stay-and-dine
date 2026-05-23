@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Login & Sign Up | Almasi Eateries</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container">
+
+      <a href="index.html" class="logo">
+        ◇ Almasi Eateries
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="#login" class="btn btn-primary">
+        Login
+      </a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- AUTH PAGE WRAPPER -->
+    <section class="auth-section">
+
+      <div class="container auth-container">
+
+        <!-- LEFT BRAND SIDE -->
+        <div class="auth-intro">
+          <p class="section-label">Welcome Back</p>
+
+          <h1>
+            Access Your Almasi Account
+          </h1>
+
+          <p>
+            Login or create an account to make reservations, send inquiries,
+            and stay connected with Almasi Eateries.
+          </p>
+
+          <div class="auth-tabs">
+            <a href="#login" class="btn btn-primary">Login</a>
+            <a href="#signup" class="btn btn-outline">Sign Up</a>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM SIDE -->
+        <div class="auth-forms">
+
+          <!-- LOGIN FORM -->
+          <form id="login" class="auth-card">
+            <h2>Login</h2>
+
+            <p>
+              Welcome back. Enter your details below.
+            </p>
+
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary auth-btn">
+              Login
+            </button>
+
+            <p class="auth-switch">
+              Don't have an account?
+              <a href="#signup">Create one</a>
+            </p>
+          </form>
+
+          <!-- SIGN UP FORM -->
+          <form id="signup" class="auth-card">
+            <h2>Create Account</h2>
+
+            <p>
+              Sign up to start making reservations and inquiries easily.
+            </p>
+
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input
+                type="text"
+                id="signup-name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-email">Email Address</label>
+              <input
+                type="email"
+                id="signup-email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-phone">Phone Number</label>
+              <input
+                type="tel"
+                id="signup-phone"
+                placeholder="07XXXXXXXX"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                placeholder="Create a password"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary auth-btn">
+              Sign Up
+            </button>
+
+            <p class="auth-switch">
+              Already have an account?
+              <a href="#login">Login here</a>
+            </p>
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
