@@ -283,20 +283,21 @@ Areas open for collaboration include:
 ## To Contribute:
 
 1. **Fork the Repository:** Create your own copy of the project to work on.
-2. **Create a Feature Branch:**
-bash
-git checkout -b feature/AmazingFeature
 
+2. **Create a Feature Branch:**
+```bash
+git checkout -b feature/AmazingFeature
+```
 
 3. **Commit Your Changes:**
 
-bash
+```bash
     git commit -m 'Add some AmazingFeature'
-
+```
 4.  **Push to the Branch:**
-bash
+```bash
     git push origin feature/AmazingFeature
-
+```
 5.  **Open a Pull Request:** Describe your changes and submit for review.
 
 
