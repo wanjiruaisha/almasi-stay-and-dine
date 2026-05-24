@@ -744,7 +744,7 @@ a {
 .hamburger {
   display: none;
   font-size: 2rem;
-  color: var(--brown);
+  color: var(--beige);
   cursor: pointer;
 }
 
@@ -768,7 +768,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
-    background: var(--cream);
+    background:var(--brown) ;
     padding: 20px;
     border-radius: 16px;
     box-shadow: var(--shadow);
