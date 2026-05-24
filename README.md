@@ -62,7 +62,6 @@ The project included:
 - Competitor analysis of hospitality websites
 - UI/UX research for restaurant and hotel platforms
 - Responsive layout planning
-- Moodboard creation in Figma
 
 The design direction focused on:
 
@@ -97,7 +96,6 @@ The design direction focused on:
 - Flexbox
 - CSS Grid
 - Media Queries
-- Figma
 - Git & GitHub
 - Vercel
 
@@ -106,20 +104,33 @@ The design direction focused on:
 # Project Structure
 
 ```txt
-Almasi-Eateries/
-│
-├── index.html
-├── menu.html
-├── rooms.html
-├── contact.html
-│
-├── css/
-│   └── style.css
-│
-├── assets/
-│   └── images/
-│
-└── README.md
+│   about.html
+│   auth.html
+│   contact.html
+│   index.html
+│   LICENSE
+│   menu.html
+│   README.md
+│   rooms.html
+│   
+├───assets
+│   └───images
+│           about-restaurant.jpg
+│           biryani.jpg
+│           chapati-beef.jpg
+│           double-room.jpg
+│           githeri.jpg
+│           room-1.jpg
+│           room-2.jpg
+│           room-3.jpg
+│           room-4.jpg
+│           room.jpg
+│           single-room.jpg
+│           traditionalmeal.jpg
+│           ugali-fish.jpg
+│           
+└───css
+        style.css
 ```
 
 ---
