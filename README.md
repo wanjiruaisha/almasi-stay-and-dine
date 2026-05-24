@@ -150,12 +150,7 @@ Contains:
 
 ## 2. Hero Section
 
-Highlights:
-- Main business slogan
-- Introduction text
-- Call-to-action buttons
-- Featured visuals
-
+![alt text](image-3.png)
 ---
 
 ## 3. Weekly Offers Section
@@ -168,23 +163,14 @@ Showcases:
 ---
 
 ## 4. Signature Meals Section
+![alt text](image.png)
 
-Showcases:
-- Pilau
-- Biryani
-
-- Featured food imagery
 
 ---
 
 ## 5. Rooms Section
 
-Displays:
-- Single rooms
-- Double rooms
-- Pricing information
-- Amenities
-
+![alt text](image-2.png)
 ---
 
 ## 6. Services Section
@@ -201,10 +187,7 @@ Highlights:
 
 ## 7. Gallery Section
 
-Contains:
-- Food photography
-- Room photography
-- Business environment visuals
+![alt text](image-1.png)
 
 ---
 
