@@ -116,15 +116,21 @@ The design direction focused on:
 ├───assets
 │   └───images
 │           about-restaurant.jpg
+│           accomadationspace.jpg
+│           bedsetup.jpg
 │           biryani.jpg
 │           chapati-beef.jpg
 │           double-room.jpg
+│           gallery-screenshot.png
 │           githeri.jpg
-│           room-1.jpg
-│           room-2.jpg
-│           room-3.jpg
-│           room-4.jpg
+│           herosection-screenshot.png
+│           mukimo.jpg
+│           pilau.jpg
+│           room-interior.jpg
+│           room-screenshot.png
 │           room.jpg
+│           roomservice.jpg
+│           signaturemeals-screenshot.png
 │           single-room.jpg
 │           traditionalmeal.jpg
 │           ugali-fish.jpg
