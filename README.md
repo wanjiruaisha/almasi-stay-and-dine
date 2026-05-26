@@ -150,7 +150,7 @@ Contains:
 
 ## 2. Hero Section
 
-![alt text](image-3.png)
+![alt text](assets/images/herosection-screenshot.png)
 ---
 
 ## 3. Weekly Offers Section
@@ -163,14 +163,14 @@ Showcases:
 ---
 
 ## 4. Signature Meals Section
-![alt text](image.png)
+![alt text](assets/images/signaturemeals-screenshot.png)
 
 
 ---
 
 ## 5. Rooms Section
 
-![alt text](image-2.png)
+![alt text](assets/images/room-screenshot.png)
 ---
 
 ## 6. Services Section
@@ -187,7 +187,7 @@ Highlights:
 
 ## 7. Gallery Section
 
-![alt text](image-1.png)
+![alt text](assets/images/gallery-screenshot.png)
 
 ---
 
