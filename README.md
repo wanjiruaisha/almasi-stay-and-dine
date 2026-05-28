@@ -107,12 +107,17 @@ The design direction focused on:
 │   about.html
 │   auth.html
 │   contact.html
+│   create-account.html
 │   index.html
 │   LICENSE
+│   login.html
 │   menu.html
 │   README.md
 │   rooms.html
 │   
+├───.vscode
+│       settings.json
+│       
 ├───assets
 │   └───images
 │           about-restaurant.jpg
@@ -137,6 +142,7 @@ The design direction focused on:
 │           
 └───css
         style.css
+        
 ```
 
 ---
