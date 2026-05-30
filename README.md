@@ -105,7 +105,6 @@ The design direction focused on:
 
 ```txt
 │   about.html
-│   auth.html
 │   contact.html
 │   create-account.html
 │   index.html
