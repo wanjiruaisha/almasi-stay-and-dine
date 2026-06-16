@@ -53,6 +53,9 @@ const meals = [
 const menuContainer = document.getElementById("menuContainer");
 const menuMessage = document.getElementById("menuMessage");
 const searchInput = document.getElementById("searchInput");
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+let selectedCategory = "all";
 
 // Displays meal cards on the page
 function renderMeals(mealsToRender) {
@@ -85,15 +88,31 @@ function renderMeals(mealsToRender) {
 
 renderMeals(meals);
 
-//Adding search functionality
-function searchMeals() {
+//Adding search functionality and category filtering
+function filterMeals() {
   const searchTerm = searchInput.value.toLowerCase();
 
-  const searchedMeals = meals.filter((meal) => {
-    return meal.name.toLowerCase().includes(searchTerm);
+  const filteredMeals = meals.filter((meal) => {
+    const matchesSearch = meal.name.toLowerCase().includes(searchTerm);
+
+    const matchesCategory =
+      selectedCategory === "all" || meal.category === selectedCategory;
+
+    return matchesSearch && matchesCategory;
   });
 
-  renderMeals(searchedMeals);
+  renderMeals(filteredMeals);
 }
+// Search listener
+searchInput.addEventListener("input", filterMeals);
 
-searchInput.addEventListener("input", searchMeals);
+//Category filter buttons
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    selectedCategory = button.dataset.category;
+    filterMeals();
+  });
+});
