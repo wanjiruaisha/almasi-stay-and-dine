@@ -52,6 +52,7 @@ const meals = [
 // Selecting elements from the HTML page
 const menuContainer = document.getElementById("menuContainer");
 const menuMessage = document.getElementById("menuMessage");
+const searchInput = document.getElementById("searchInput");
 
 // Displays meal cards on the page
 function renderMeals(mealsToRender) {
@@ -84,3 +85,15 @@ function renderMeals(mealsToRender) {
 
 renderMeals(meals);
 
+//Adding search functionality
+function searchMeals() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  const searchedMeals = meals.filter((meal) => {
+    return meal.name.toLowerCase().includes(searchTerm);
+  });
+
+  renderMeals(searchedMeals);
+}
+
+searchInput.addEventListener("input", searchMeals);
