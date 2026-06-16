@@ -373,8 +373,7 @@ The Almasi-Eateries (Coming Soon)
 # Credits
 
 ## Business Information
-
-Almasi-Eateries
+almasi-stay-and dine
 
 ## Design & Development
 
