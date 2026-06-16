@@ -79,6 +79,10 @@ function renderMeals(mealsToRender) {
         <h3>${meal.name}</h3>
         <p>${meal.description}</p>
         <strong>Ksh ${meal.price}</strong>
+
+        <button class="btn btn-primary add-to-cart-btn" data-id="${meal.id}">
+          Add to Cart
+        </button>
       </div>
     `;
 
