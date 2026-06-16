@@ -1,4 +1,4 @@
-# Almasi-Eateries
+# Almasi Stay & Dine
 
 ## Overview
 
