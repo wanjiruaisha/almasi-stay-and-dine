@@ -54,8 +54,13 @@ const menuContainer = document.getElementById("menuContainer");
 const menuMessage = document.getElementById("menuMessage");
 const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll(".filter-btn");
+const cartItemsContainer = document.getElementById("cartItems");
+const cartCount = document.getElementById("cartCount");
+const cartTotal = document.getElementById("cartTotal");
+
 
 let selectedCategory = "all";
+let cart = [];
 
 // Displays meal cards on the page
 function renderMeals(mealsToRender) {
@@ -120,3 +125,64 @@ filterButtons.forEach((button) => {
     filterMeals();
   });
 });
+
+
+//Adding basic cart logic
+function addToCart(mealId) {
+  const selectedMeal = meals.find((meal) => meal.id === mealId);
+  const existingMeal = cart.find((item) => item.id === mealId);
+
+  if (existingMeal) {
+    existingMeal.quantity += 1;
+  } else {
+    cart.push({
+      ...selectedMeal,
+      quantity: 1
+    });
+  }
+
+  renderCart();
+}
+
+function calculateCartTotal() {
+  return cart.reduce((total, item) => {
+    return total + item.price * item.quantity;
+  }, 0);
+}
+
+function renderCart() {
+  cartItemsContainer.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+  }
+
+  cart.forEach((item) => {
+    const cartItem = document.createElement("div");
+    cartItem.classList.add("cart-item");
+
+    cartItem.innerHTML = `
+      <div>
+        <h4>${item.name}</h4>
+        <p>Ksh ${item.price} x ${item.quantity}</p>
+      </div>
+    `;
+
+    cartItemsContainer.appendChild(cartItem);
+  });
+
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+  cartCount.textContent = totalItems;
+  cartTotal.textContent = calculateCartTotal();
+}
+
+//Cart event listener
+menuContainer.addEventListener("click", (event) => {
+  if (event.target.classList.contains("add-to-cart-btn")) {
+    const mealId = Number(event.target.dataset.id);
+    addToCart(mealId);
+  }
+});
+
+renderCart();
