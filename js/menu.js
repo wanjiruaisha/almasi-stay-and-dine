@@ -24,6 +24,30 @@ const meals = [
     image: "assets/images/githeri.jpg",
     description: "A healthy traditional meal made with maize and beans."
   }
+  {
+  id: 4,
+  name: "Ugali & Fish",
+  category: "traditional",
+  price: 500,
+  image: "assets/images/ugali-fish.jpg",
+  description: "Fresh fish served with ugali and vegetables for a filling meal."
+},
+{
+  id: 5,
+  name: "Chapati & Beef",
+  category: "main",
+  price: 350,
+  image: "assets/images/chapati-beef.jpg",
+  description: "Soft chapati served with rich beef stew and vegetables."
+},
+{
+  id: 6,
+  name: "Mukimo",
+  category: "traditional",
+  price: 300,
+  image: "assets/images/mukimo.jpg",
+  description: "A traditional mashed meal served with stew for a homely taste."
+}
 ];
 // Selecting elements from the HTML page
 const menuContainer = document.getElementById("menuContainer");
@@ -59,3 +83,4 @@ function renderMeals(mealsToRender) {
 }
 
 renderMeals(meals);
+
