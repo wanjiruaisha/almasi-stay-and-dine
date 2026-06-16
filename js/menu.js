@@ -166,6 +166,12 @@ function renderCart() {
         <h4>${item.name}</h4>
         <p>Ksh ${item.price} x ${item.quantity}</p>
       </div>
+      <div class="cart-actions">
+        <button data-id="${item.id}" class="decrease-btn">-</button>
+        <span>${item.quantity}</span>
+        <button data-id="${item.id}" class="increase-btn">+</button>
+        <button data-id="${item.id}" class="remove-btn">Remove</button>
+      </div>
     `;
 
     cartItemsContainer.appendChild(cartItem);
@@ -177,6 +183,37 @@ function renderCart() {
   cartTotal.textContent = calculateCartTotal();
 }
 
+
+renderCart();
+
+
+function increaseQuantity(mealId) {
+  const item = cart.find((meal) => meal.id === mealId);
+
+  if (item) {
+    item.quantity += 1;
+  }
+
+  renderCart();
+}
+//adding quantity controls
+function decreaseQuantity(mealId) {
+  const item = cart.find((meal) => meal.id === mealId);
+
+  if (item && item.quantity > 1) {
+    item.quantity -= 1;
+  } else {
+    cart = cart.filter((meal) => meal.id !== mealId);
+  }
+
+  renderCart();
+}
+
+function removeFromCart(mealId) {
+  cart = cart.filter((meal) => meal.id !== mealId);
+  renderCart();
+}
+
 //Cart event listener
 menuContainer.addEventListener("click", (event) => {
   if (event.target.classList.contains("add-to-cart-btn")) {
@@ -185,4 +222,19 @@ menuContainer.addEventListener("click", (event) => {
   }
 });
 
-renderCart();
+//quantity control listener
+cartItemsContainer.addEventListener("click", (event) => {
+  const mealId = Number(event.target.dataset.id);
+
+  if (event.target.classList.contains("increase-btn")) {
+    increaseQuantity(mealId);
+  }
+
+  if (event.target.classList.contains("decrease-btn")) {
+    decreaseQuantity(mealId);
+  }
+
+  if (event.target.classList.contains("remove-btn")) {
+    removeFromCart(mealId);
+  }
+});
