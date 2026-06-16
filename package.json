@@ -1,0 +1,24 @@
+{
+  "name": "almasi-stay-and-dine",
+  "version": "1.0.0",
+  "description": "Almasi-Eateries is a responsive hospitality website designed to establish a modern online presence for an upcoming business located in Nakuru Town, Kenya.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanjiruaisha/Almasi-Eateries.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wanjiruaisha/Almasi-Eateries/issues"
+  },
+  "homepage": "https://github.com/wanjiruaisha/Almasi-Eateries#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
