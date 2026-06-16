@@ -2,7 +2,7 @@
 
 ## Overview
 
-Almasi-Eateries is a responsive hospitality website designed to establish a modern online presence for an upcoming business located in Nakuru Town, Kenya.
+Almasi Stay & Dine is a JavaScript-powered hospitality website for a restaurant and accommodation business in Nakuru. The platform allows users to browse meals, filter menu categories, add meals to a cart, and place orders through WhatsApp.
 
 The website showcases both restaurant and accommodation services, allowing customers to explore signature meals, room options, amenities, contact information, and ordering or booking options through phone calls and WhatsApp.
 
@@ -12,28 +12,24 @@ The overall design direction focuses on creating a warm, traditional, homely, an
 
 # Features
 
-- Responsive homepage design
-- Navigation bar with quick links
-- Hero section with call-to-action buttons
-- Weekly food offers section
-- Signature meals showcase
-- Rooms and accommodation section
-- Services and amenities section
-- Gallery section
-- Contact and location section
-- WhatsApp integration
-- Call buttons for direct communication
-- Social media integration
-- Mobile-friendly responsive layouts
-- Organized project structure
-- Professional hospitality branding
+-- Responsive hospitality website
+- Dynamic menu rendering using JavaScript
+- Meal search functionality
+- Category-based meal filtering
+- Dining cart system
+- Cart quantity updates
+- Cart total calculation
+- WhatsApp order link generation
+- LocalStorage support for cart persistence
+- Room and dining focused branding
+- Jest testing setup for core JavaScript logic
 
 ---
 
 # Business Information
 
 ## Business Name
-Almasi-Eateries
+Almasi Stay & Dine
 
 ## Slogan
 Affordable, Healthy, Tasty Meals
@@ -98,6 +94,9 @@ The design direction focused on:
 - Media Queries
 - Git & GitHub
 - Vercel
+- LocalStorage API
+-Jest
+-Javascript ES6+
 
 ---
 
@@ -258,13 +257,13 @@ The website integrates direct WhatsApp communication to allow customers to:
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/wanjiruaisha/almasi-eateries-hotel.git
+git clone https://github.com/wanjiruaisha/almasi-stay-and-dine.git
 ```
 
 ## 2. Navigate Into the Project Folder
 
 ```bash
-cd almasi-Eateries
+cd almasi-stay-and-dine
 ```
 
 ## 3. Open the Project
@@ -311,26 +310,33 @@ git checkout -b feature/AmazingFeature
 ```
 5.  **Open a Pull Request:** Describe your changes and submit for review.
 
+## Running Tests
 
+Install Jest if dependencies are not installed:
+
+```bash
+npm install
+```
+
+Run tests:
+
+```bash
+npm test
+```
+
+---
 
 # Future Improvements
 
 Potential future upgrades include:
 
-- Online booking system
-- Dynamic menu filtering
-- Shopping cart functionality
-- Customer review system
-- Google Maps integration
-- Backend integration
-- Admin dashboard
-- Facebook page integration
-- Online payment systems
-- Dark mode
-- Search functionality
-- Animated transitions
-- Food ordering dashboard
-- Customer reservation forms
+-Room booking system using JavaScript
+-Admin dashboard for orders and bookings
+-Customer reviews
+-Payment integration
+-Backend/database integration
+-User authentication
+-Online room availability tracking
 
 ---
 
