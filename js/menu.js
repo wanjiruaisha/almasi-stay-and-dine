@@ -59,6 +59,9 @@ const cartItemsContainer = document.getElementById("cartItems");
 const cartCount = document.getElementById("cartCount");
 const cartTotal = document.getElementById("cartTotal");
 
+const clearCartBtn = document.getElementById("clearCartBtn");
+const whatsappOrderBtn = document.getElementById("whatsappOrderBtn");
+
 
 let selectedCategory = "all";
 let cart = JSON.parse(localStorage.getItem("almasiCart")) || [];
@@ -184,6 +187,8 @@ function renderCart() {
 
   cartCount.textContent = totalItems;
   cartTotal.textContent = calculateCartTotal();
+
+  updateWhatsAppLink();
 }
 
 
@@ -220,12 +225,28 @@ function removeFromCart(mealId) {
   cart = cart.filter((meal) => meal.id !== mealId);
 
   saveCart();
-  
+
   renderCart();
 }
 
 function saveCart() {
   localStorage.setItem("almasiCart", JSON.stringify(cart));
+}
+
+function updateWhatsAppLink() {
+  if (cart.length === 0) {
+    whatsappOrderBtn.href = "#";
+    return;
+  }
+
+  const orderText = cart
+    .map((item) => `${item.name} x${item.quantity} - Ksh ${item.price * item.quantity}`)
+    .join("%0A");
+
+  const message =
+    `Hello Almasi Stay & Dine, I would like to order:%0A${orderText}%0A%0ATotal: Ksh ${calculateCartTotal()}`;
+
+  whatsappOrderBtn.href = `https://wa.me/254713968080?text=${message}`;
 }
 
 //Cart event listener
@@ -251,4 +272,11 @@ cartItemsContainer.addEventListener("click", (event) => {
   if (event.target.classList.contains("remove-btn")) {
     removeFromCart(mealId);
   }
+});
+
+//clearcart event listener
+clearCartBtn.addEventListener("click", () => {
+  cart = [];
+  saveCart();
+  renderCart();
 });
