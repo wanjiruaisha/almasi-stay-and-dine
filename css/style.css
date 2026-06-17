@@ -1184,3 +1184,12 @@ html {
   font-size: 2rem;
   cursor: pointer;
 }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cart-btn {
+  white-space: nowrap;
+}
