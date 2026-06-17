@@ -54,6 +54,7 @@ const menuContainer = document.getElementById("menuContainer");
 const menuMessage = document.getElementById("menuMessage");
 const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll(".filter-btn");
+
 const cartItemsContainer = document.getElementById("cartItems");
 const cartCount = document.getElementById("cartCount");
 const cartTotal = document.getElementById("cartTotal");
@@ -141,6 +142,8 @@ function addToCart(mealId) {
     });
   }
 
+  saveCart();
+
   renderCart();
 }
 
@@ -194,6 +197,8 @@ function increaseQuantity(mealId) {
     item.quantity += 1;
   }
 
+  saveCart();
+
   renderCart();
 }
 //adding quantity controls
@@ -206,12 +211,21 @@ function decreaseQuantity(mealId) {
     cart = cart.filter((meal) => meal.id !== mealId);
   }
 
+  saveCart();
+
   renderCart();
 }
 
 function removeFromCart(mealId) {
   cart = cart.filter((meal) => meal.id !== mealId);
+
+  saveCart();
+  
   renderCart();
+}
+
+function saveCart() {
+  localStorage.setItem("almasiCart", JSON.stringify(cart));
 }
 
 //Cart event listener
