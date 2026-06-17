@@ -23,7 +23,7 @@ const meals = [
     price: 200,
     image: "assets/images/githeri.jpg",
     description: "A healthy traditional meal made with maize and beans."
-  }
+  },
   {
   id: 4,
   name: "Ugali & Fish",
@@ -60,7 +60,7 @@ const cartTotal = document.getElementById("cartTotal");
 
 
 let selectedCategory = "all";
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("almasiCart")) || [];
 
 // Displays meal cards on the page
 function renderMeals(mealsToRender) {
