@@ -1017,3 +1017,108 @@ html {
     overflow: visible;
   }
 }
+
+/* Dining page controls */
+.menu-controls {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d6c5aa;
+  border-radius: 0.75rem;
+  font: inherit;
+}
+
+.menu-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-btn {
+  padding: 0.7rem 1rem;
+  border: 1px solid #b8894d;
+  border-radius: 999px;
+  background: transparent;
+  color: #5a371d;
+  cursor: pointer;
+  font: inherit;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #b8894d;
+  color: #fff;
+}
+
+.menu-message {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #8a4b22;
+}
+
+/* Cart section */
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.cart-items {
+  display: grid;
+  gap: 1rem;
+}
+
+.cart-item,
+.cart-summary {
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-actions button {
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cart-summary {
+  height: fit-content;
+}
+
+.cart-summary .btn {
+  width: 100%;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+/* Make cart responsive */
+@media (max-width: 768px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
