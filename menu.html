@@ -35,6 +35,43 @@
     </nav>
   </header>
 
+  <!-- Floating cart -->
+  <button id="openCartBtn" class="floating-cart-btn">
+  🛒 Cart (<span id="navCartCount">0</span>)
+</button>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<aside id="cartDrawer" class="cart-drawer">
+  <div class="cart-drawer-header">
+    <h2>Your Cart</h2>
+    <button id="closeCartBtn" class="close-cart-btn">×</button>
+  </div>
+
+  <div id="cartItems" class="cart-items">
+    <p>Your cart is empty.</p>
+  </div>
+
+  <div class="cart-summary">
+    <h3>Order Summary</h3>
+    <p>Total Items: <span id="cartCount">0</span></p>
+    <p>Total Amount: <strong>Ksh <span id="cartTotal">0</span></strong></p>
+
+    <button id="clearCartBtn" class="btn btn-light">
+      Clear Cart
+    </button>
+
+    <a
+      id="whatsappOrderBtn"
+      href="#"
+      target="_blank"
+      class="btn btn-primary"
+    >
+      Order on WhatsApp
+    </a>
+  </div>
+</aside>
+
   <main>
     <!-- Hero section introducing the dining page -->
     <section class="page-hero">
@@ -119,39 +156,7 @@
       </div>
     </section>
 
-    <!-- Cart section: JavaScript updates the selected meals and totals -->
-    <section class="section-padding menu-list-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Your Order</p>
-          <h2>Dining Cart</h2>
-          <p>Review your selected meals before placing your order.</p>
-        </div>
-
-        <div class="cart-layout">
-          <div id="cartItems" class="cart-items"></div>
-
-          <div class="cart-summary">
-            <h3>Order Summary</h3>
-            <p>Total Items: <span id="cartCount">0</span></p>
-            <p>Total Amount: <strong>Ksh <span id="cartTotal">0</span></strong></p>
-
-            <button id="clearCartBtn" class="btn btn-light">
-              Clear Cart
-            </button>
-
-            <a
-              id="whatsappOrderBtn"
-              href="#"
-              target="_blank"
-              class="btn btn-primary"
-            >
-              Order on WhatsApp
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="cta-section">
       <div class="container cta-content">
