@@ -102,8 +102,10 @@ const cartTotal = document.getElementById("cartTotal");
 const clearCartBtn = document.getElementById("clearCartBtn");
 const whatsappOrderBtn = document.getElementById("whatsappOrderBtn");
 
-
+// Tracks the currently selected category
 let selectedCategory = "all";
+
+// Loads saved cart items from localStorage, or starts with an empty cart
 let cart = JSON.parse(localStorage.getItem("almasiCart")) || [];
 
 // Displays meal cards on the page
@@ -139,7 +141,7 @@ function renderMeals(mealsToRender) {
   });
 }
 
-renderMeals(meals);
+
 
 //Adding search functionality and category filtering
 function filterMeals() {
@@ -156,10 +158,8 @@ function filterMeals() {
 
   renderMeals(filteredMeals);
 }
-// Search listener
-searchInput.addEventListener("input", filterMeals);
 
-//Category filter buttons
+// Category buttons update the selected category and re-filter the meals
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((btn) => btn.classList.remove("active"));
@@ -171,7 +171,7 @@ filterButtons.forEach((button) => {
 });
 
 
-//Adding basic cart logic
+// Adds a meal to the cart or increases its quantity if it already exists
 function addToCart(mealId) {
   const selectedMeal = meals.find((meal) => meal.id === mealId);
   const existingMeal = cart.find((item) => item.id === mealId);
@@ -190,12 +190,14 @@ function addToCart(mealId) {
   renderCart();
 }
 
+// Calculates the total price of all cart items
 function calculateCartTotal() {
   return cart.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
 }
 
+// Handles cart quantity and remove buttons using event delegation
 function renderCart() {
   cartItemsContainer.innerHTML = "";
 
@@ -232,9 +234,8 @@ function renderCart() {
 }
 
 
-renderCart();
 
-
+// Increases the quantity of a cart item
 function increaseQuantity(mealId) {
   const item = cart.find((meal) => meal.id === mealId);
 
@@ -246,7 +247,8 @@ function increaseQuantity(mealId) {
 
   renderCart();
 }
-//adding quantity controls
+
+// Decreases quantity, and removes item if quantity reaches zero
 function decreaseQuantity(mealId) {
   const item = cart.find((meal) => meal.id === mealId);
 
@@ -261,6 +263,7 @@ function decreaseQuantity(mealId) {
   renderCart();
 }
 
+// Removes a meal from the cart completely
 function removeFromCart(mealId) {
   cart = cart.filter((meal) => meal.id !== mealId);
 
@@ -273,6 +276,7 @@ function saveCart() {
   localStorage.setItem("almasiCart", JSON.stringify(cart));
 }
 
+// Creates a WhatsApp message using the current cart details
 function updateWhatsAppLink() {
   if (cart.length === 0) {
     whatsappOrderBtn.href = "#";
@@ -288,6 +292,10 @@ function updateWhatsAppLink() {
 
   whatsappOrderBtn.href = `https://wa.me/254713968080?text=${message}`;
 }
+
+// Search runs every time the user types
+searchInput.addEventListener("input", filterMeals);
+
 
 //Cart event listener
 menuContainer.addEventListener("click", (event) => {
@@ -314,9 +322,14 @@ cartItemsContainer.addEventListener("click", (event) => {
   }
 });
 
-//clearcart event listener
+//clearCart event listener
 clearCartBtn.addEventListener("click", () => {
   cart = [];
   saveCart();
   renderCart();
 });
+
+
+//Initial page loads
+renderMeals(meals);
+renderCart();
