@@ -15,7 +15,7 @@
 
   <!-- PAGE TITLE -->
   <title>
-    Rooms | Almasi Eateries
+    Rooms | Almasi Stay & Dine
   </title>
 
   <!-- LINKING EXTERNAL CSS FILE -->
@@ -35,7 +35,7 @@
 
     <nav class="navbar container">
 
-  <a href="index.html" class="logo">◇ Almasi Eateries</a>
+  <a href="index.html" class="logo">◇ Almasi Stay & Dine</a>
 
   <!-- HAMBURGER CHECKBOX -->
   <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -127,7 +127,7 @@
 
             <img
               src="assets/images/single-room.jpg"
-              alt="Single room at Almasi Eateries"
+              alt="Single room at Almasi Stay and Dine"
             />
 
             <div>
@@ -153,7 +153,7 @@
               </ul>
 
               <a
-                href="https://wa.me/254713968080?text=Hello%20Almasi%20Eateries%2C%20I%20would%20like%20to%20book%20a%20single%20room."
+                href="https://wa.me/254713968080?text=Hello%20Almasi%20Stay%20and%20Dine%2C%20I%20would%20like%20to%20book%20a%20single%20room."
                 target="_blank"
                 class="btn btn-primary"
               >
@@ -169,7 +169,7 @@
 
             <img
               src="assets/images/double-room.jpg"
-              alt="Double room at Almasi Eateries"
+              alt="Double room at Almasi Stay and Dine"
             />
 
             <div>
@@ -195,7 +195,7 @@
               </ul>
 
               <a
-                href="https://wa.me/254713968080?text=Hello%20Almasi%20Eateries%2C%20I%20would%20like%20to%20book%20a%20double%20room."
+                href="https://wa.me/254713968080?text=Hello%20Almasi%20Stay%20and%20Dine%2C%20I%20would%20like%20to%20book%20a%20double%20room."
                 target="_blank"
                 class="btn btn-primary"
               >
@@ -211,6 +211,55 @@
       </div>
 
     </section>
+    
+    <!-- ==========================================
+     ROOM BOOKING FORM SECTION
+     ========================================== -->
+<section class="reservation-section section-padding">
+  <div class="container reservation-content">
+
+    <div class="reservation-text">
+      <p class="section-label">Room Booking</p>
+      <h2>Reserve Your Stay</h2>
+      <p>
+        Fill in your booking details to calculate your stay and save your reservation.
+      </p>
+    </div>
+
+    <form id="bookingForm" class="reservation-form">
+      <h3>Booking Details</h3>
+
+      <label for="guestName">Full Name</label>
+      <input type="text" id="guestName" placeholder="Enter your full name">
+
+      <label for="guestPhone">Phone Number</label>
+      <input type="tel" id="guestPhone" placeholder="0712345678">
+
+      <label for="roomType">Room Type</label>
+      <select id="roomType">
+        <option value="">Select a room</option>
+        <option value="single" data-price="1000">Single Room - Ksh 1,000/night</option>
+        <option value="double" data-price="2500">Double Room - Ksh 2,500/night</option>
+      </select>
+
+      <label for="checkInDate">Check-in Date</label>
+      <input type="date" id="checkInDate">
+
+      <label for="checkOutDate">Check-out Date</label>
+      <input type="date" id="checkOutDate">
+
+      <label for="guestCount">Number of Guests</label>
+      <input type="number" id="guestCount" min="1" value="1">
+
+      <button type="submit" class="btn btn-primary">
+        Confirm Booking
+      </button>
+
+      <p id="bookingMessage" class="booking-message"></p>
+    </form>
+
+  </div>
+</section>
 
     <!-- ==========================================
          AMENITIES SECTION
@@ -347,7 +396,7 @@
           <div class="hero-buttons">
 
             <a
-              href="https://wa.me/254713968080?text=Hello%20Almasi%20Eateries%2C%20I%20would%20like%20to%20inquire%20about%20room%20availability."
+              href="https://wa.me/254713968080?text=Hello%20Almasi%20Stay%20and%20Dine%2C%20I%20would%20like%20to%20inquire%20about%20room%20availability."
               target="_blank"
               class="btn btn-primary"
             >
@@ -382,7 +431,7 @@
 
           <p>
             For accurate availability and final pricing, customers are encouraged
-            to contact Almasi Eateries directly.
+            to contact Almasi Stay and Dine directly.
           </p>
 
           <ul class="room-features">
@@ -453,7 +502,7 @@
         </p>
 
         <p>
-          TikTok: Almasi Eateries
+          TikTok: Almasi Stay and Dine
         </p>
 
       </div>
@@ -462,7 +511,7 @@
 
     <!-- COPYRIGHT -->
     <p class="footer-bottom">
-      © 2026 Almasi Eateries.
+      © 2026 Almasi Stay and Dine.
       All rights reserved.
     </p>
 
