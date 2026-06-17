@@ -102,6 +102,12 @@ const cartTotal = document.getElementById("cartTotal");
 const clearCartBtn = document.getElementById("clearCartBtn");
 const whatsappOrderBtn = document.getElementById("whatsappOrderBtn");
 
+const navCartCount =document.getElementById("navCartCount");
+const openCartBtn = document.getElementById("openCartBtn");
+const closeCartBtn = document.getElementById("closeCartBtn");
+const cartDrawer = document.getElementById("cartDrawer");
+const cartOverlay = document.getElementById("cartOverlay");
+
 // Tracks the currently selected category
 let selectedCategory = "all";
 
@@ -231,6 +237,7 @@ function renderCart() {
   cartTotal.textContent = calculateCartTotal();
 
   updateWhatsAppLink();
+  navCartCount.textContent = totalItems;
 }
 
 
@@ -292,6 +299,16 @@ function updateWhatsAppLink() {
 
   whatsappOrderBtn.href = `https://wa.me/254713968080?text=${message}`;
 }
+//Adding slide cart functionality
+function openCart() {
+  cartDrawer.classList.add("active");
+  cartOverlay.classList.add("active");
+}
+
+function closeCart() {
+  cartDrawer.classList.remove("active");
+  cartOverlay.classList.remove("active");
+}
 
 // Search runs every time the user types
 searchInput.addEventListener("input", filterMeals);
@@ -328,6 +345,10 @@ clearCartBtn.addEventListener("click", () => {
   saveCart();
   renderCart();
 });
+//cart event listeners
+openCartBtn.addEventListener("click", openCart);
+closeCartBtn.addEventListener("click", closeCart);
+cartOverlay.addEventListener("click", closeCart);
 
 
 //Initial page loads
