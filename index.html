@@ -15,7 +15,7 @@
 
   <!-- WEBSITE TITLE -->
   <title>
-    Almasi Eateries | Homely Meals & Comfortable Rooms
+    Almasi Stay and Dine | Homely Meals & Comfortable Rooms
   </title>
 
   <!-- LINKING EXTERNAL CSS FILE -->
@@ -34,7 +34,7 @@
   <header class="site-header">
 <nav class="navbar container">
 
-  <a href="index.html" class="logo">◇ Almasi Eateries</a>
+  <a href="index.html" class="logo">◇ Almasi Stay & Dine</a>
 
   <!-- HAMBURGER CHECKBOX -->
   <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -82,7 +82,7 @@
         <div class="hero-text">
 
           <p class="section-label">
-            Welcome to Almasi Eateries 
+            Welcome to Almasi Stay and Dine
           </p>
 
           <h1>
@@ -384,7 +384,7 @@
           </p>
 
           <h2>
-            Reserve a Room or Table
+            Reserve a Table
           </h2>
 
           <p>
@@ -416,7 +416,7 @@
         </div>
 
         <!-- RESERVATION FORM -->
-        <form class="reservation-form">
+        <form id="homeReservationForm" class="reservation-form">
 
           <!-- FULL NAME -->
           <div class="form-group">
@@ -441,8 +441,6 @@
             </label>
 
             <select id="reservation-type">
-
-              <option>Room Reservation</option>
 
               <option>Table Reservation</option>
 
@@ -497,14 +495,12 @@
           </div>
 
           <!-- FINAL RESERVATION BUTTON -->
-          <a
-            href="https://wa.me/254713968080?text=Hello%20Almasi%20Eateries%2C%20I%20would%20like%20to%20make%20a%20reservation."
-            target="_blank"
-            class="btn btn-primary reservation-btn"
-          >
-            Send Reservation Request
-          </a>
-
+          <button
+           type="submit"
+           class="btn btn-primary reservation-btn"
+           >
+             Send Reservation Request
+           </button>
         </form>
 
       </div>
@@ -675,6 +671,7 @@
 
   </footer>
 
+  <script src="js/reservation.js"></script>
 </body>
 
 </html>
