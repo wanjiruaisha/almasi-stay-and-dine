@@ -21,22 +21,25 @@
         <li><a href="login.html">Login</a></li>
       </ul>
     
-      <a
-        href="https://wa.me/254713968080?text=Hello%20Almasi%20Stay%20%26%20Dine%2C%20I%20would%20like%20to%20place%20an%20order."
-        target="_blank"
-        class="btn btn-primary"
-      >
-        Order Now
-      </a>
+      <div class="nav-actions">
+  <button id="openCartBtn" class="btn btn-light cart-btn">
+    🛒 Cart (<span id="navCartCount">0</span>)
+  </button>
 
+  <a
+    href="https://wa.me/254713968080?text=Hello%20Almasi%20Stay%20%26%20Dine%2C%20I%20would%20like%20to%20place%20an%20order."
+    target="_blank"
+    class="btn btn-primary"
+  >
+    Order Now
+  </a>
+</div>
       
     </nav>
   </header>
 
   <!-- Floating cart -->
-  <button id="openCartBtn" class="floating-cart-btn">
-  🛒 Cart (<span id="navCartCount">0</span>)
-</button>
+
 
 <div id="cartOverlay" class="cart-overlay"></div>
 
