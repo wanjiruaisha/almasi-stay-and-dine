@@ -1122,3 +1122,65 @@ html {
     align-items: flex-start;
   }
 }
+
+.floating-cart-btn {
+  position: fixed;
+  top: 6rem;
+  right: 1.5rem;
+  z-index: 1000;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: #b8894d;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 1001;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 380px;
+  max-width: 90%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1002;
+  padding: 1.5rem;
+  overflow-y: auto;
+  transition: 0.3s ease;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.cart-drawer.active {
+  right: 0;
+}
+
+.cart-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-cart-btn {
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
