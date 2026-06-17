@@ -47,6 +47,46 @@ const meals = [
   price: 300,
   image: "assets/images/mukimo.jpg",
   description: "A traditional mashed meal served with stew for a homely taste."
+},
+{
+  id: 7,
+  name: "Fresh Juice",
+  category: "drinks",
+  price: 150,
+  image: "assets/images/fresh-juice.jpg",
+  description: "Freshly blended seasonal juice served chilled."
+},
+{
+  id: 8,
+  name: "Soda",
+  category: "drinks",
+  price: 80,
+  image: "assets/images/soda.jpg",
+  description: "A cold soft drink served with your meal."
+},
+{
+  id: 9,
+  name: "Bottled Water",
+  category: "drinks",
+  price: 60,
+  image: "assets/images/water.jpg",
+  description: "Clean bottled drinking water."
+},
+{
+  id: 10,
+  name: "Tea / Chai",
+  category: "breakfast",
+  price: 50,
+  image: "assets/images/tea.jpg",
+  description: "Fresh Kenyan tea served hot."
+},
+{
+  id: 11,
+  name: "Mandazi",
+  category: "breakfast",
+  price: 30,
+  image: "assets/images/mandazi.jpg",
+  description: "Soft mandazi served fresh."
 }
 ];
 // Selecting elements from the HTML page
