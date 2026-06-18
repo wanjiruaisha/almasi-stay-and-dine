@@ -1,4 +1,39 @@
 // ==========================================
+// USER CLASS
+// ==========================================
+
+class User {
+  constructor(fullName, email, phone, password) {
+    this.fullName = fullName;
+    this.email = email;
+    this.phone = phone;
+    this.password = password;
+  }
+}
+
+// ==========================================
+// AUTHENTICATION SERVICE CLASS
+// ==========================================
+
+class AuthService {
+  static saveUser(user) {
+    localStorage.setItem("almasiUser", JSON.stringify(user));
+  }
+
+  static getUser() {
+    return JSON.parse(localStorage.getItem("almasiUser"));
+  }
+
+  static isValidPassword(password) {
+    return password.length >= 6;
+  }
+
+  static doPasswordsMatch(password, confirmPassword) {
+    return password === confirmPassword;
+  }
+}
+
+// ==========================================
 // ELEMENT SELECTORS
 // ==========================================
 
@@ -11,10 +46,10 @@ const confirmPasswordInput = document.getElementById("confirmPassword");
 const accountMessage = document.getElementById("accountMessage");
 
 // ==========================================
-// ACCOUNT VALIDATION
+// FORM HANDLING
 // ==========================================
 
-function createAccount(event) {
+createAccountForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const fullName = fullNameInput.value.trim();
@@ -29,35 +64,24 @@ function createAccount(event) {
     return;
   }
 
-  if (password.length < 6) {
+  if (!AuthService.isValidPassword(password)) {
     accountMessage.textContent = "Password must be at least 6 characters long.";
     accountMessage.className = "auth-message error-message";
     return;
   }
 
-  if (password !== confirmPassword) {
+  if (!AuthService.doPasswordsMatch(password, confirmPassword)) {
     accountMessage.textContent = "Passwords do not match.";
     accountMessage.className = "auth-message error-message";
     return;
   }
 
-  const user = {
-    fullName,
-    email,
-    phone,
-    password
-  };
+  const newUser = new User(fullName, email, phone, password);
 
-  localStorage.setItem("almasiUser", JSON.stringify(user));
+  AuthService.saveUser(newUser);
 
   accountMessage.textContent = "Account created successfully. You can now log in.";
   accountMessage.className = "auth-message success-message";
 
   createAccountForm.reset();
-}
-
-// ==========================================
-// EVENT LISTENER
-// ==========================================
-
-createAccountForm.addEventListener("submit", createAccount);
+});
