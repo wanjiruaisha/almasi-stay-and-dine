@@ -144,6 +144,7 @@ a {
 
   background: var(--amber);
   color: var(--white);
+  margin-top: .5rem;
 
 }
 
@@ -1193,3 +1194,4 @@ html {
 .cart-btn {
   white-space: nowrap;
 }
+
