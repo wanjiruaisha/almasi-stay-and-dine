@@ -1194,4 +1194,16 @@ html {
 .cart-btn {
   white-space: nowrap;
 }
+/* login styling */
+.auth-message {
+  margin-top: 1rem;
+  font-weight: 600;
+}
 
+.success-message {
+  color: #2f7d32;
+}
+
+.error-message {
+  color: #b00020;
+}
