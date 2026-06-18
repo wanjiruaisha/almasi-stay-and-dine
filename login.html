@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Login | Almasi Eateries</title>
+  <title>Login | Almasi Stay and Dine</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -25,7 +25,7 @@
 
       <!-- LOGO -->
       <a href="index.html" class="logo">
-        ◇ Almasi Eateries
+        ◇ Almasi Stay and Dine
       </a>
 
       <!-- NAV LINKS -->
@@ -86,14 +86,12 @@
             Almasi Eateries.
           </p>
 
-          <a href="index.html" class="btn btn-outline auth-outline">
-            Back to Home
-          </a>
+          
 
         </div>
 
         <!-- LOGIN FORM -->
-        <form class="auth-form-card">
+        <form id="loginForm" class="auth-form-card">
 
           <h2>Login</h2>
 
@@ -137,6 +135,11 @@
           <button type="submit" class="btn btn-primary auth-btn">
             Login
           </button>
+
+
+          <!-- JavaScript displays login success or error messages here -->
+          <p id="loginMessage" class="auth-message"></p>
+
 
           <!-- SWITCH PAGE -->
           <p class="auth-small-text">
