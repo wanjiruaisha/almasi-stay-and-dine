@@ -1,4 +1,39 @@
 // ==========================================
+// AUTHENTICATION SERVICE CLASS
+// ==========================================
+
+class AuthService {
+  static getUser() {
+    return JSON.parse(localStorage.getItem("almasiUser"));
+  }
+
+  static login(email, password) {
+    const storedUser = this.getUser();
+
+    if (!storedUser) {
+      return {
+        success: false,
+        message: "No account found. Please create an account first."
+      };
+    }
+
+    if (email !== storedUser.email || password !== storedUser.password) {
+      return {
+        success: false,
+        message: "Invalid email or password."
+      };
+    }
+
+    localStorage.setItem("isLoggedIn", "true");
+
+    return {
+      success: true,
+      message: `Welcome back, ${storedUser.fullName}!`
+    };
+  }
+}
+
+// ==========================================
 // ELEMENT SELECTORS
 // ==========================================
 
@@ -8,39 +43,23 @@ const passwordInput = document.getElementById("password");
 const loginMessage = document.getElementById("loginMessage");
 
 // ==========================================
-// LOGIN VALIDATION
+// FORM HANDLING
 // ==========================================
 
-function loginUser(event) {
+loginForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
 
-  const storedUser = JSON.parse(localStorage.getItem("almasiUser"));
+  const result = AuthService.login(email, password);
 
-  if (!storedUser) {
-    loginMessage.textContent = "No account found. Please create an account first.";
-    loginMessage.className = "auth-message error-message";
-    return;
+  loginMessage.textContent = result.message;
+  loginMessage.className = result.success
+    ? "auth-message success-message"
+    : "auth-message error-message";
+
+  if (result.success) {
+    loginForm.reset();
   }
-
-  if (email !== storedUser.email || password !== storedUser.password) {
-    loginMessage.textContent = "Invalid email or password.";
-    loginMessage.className = "auth-message error-message";
-    return;
-  }
-
-  localStorage.setItem("isLoggedIn", "true");
-
-  loginMessage.textContent = `Welcome back, ${storedUser.fullName}!`;
-  loginMessage.className = "auth-message success-message";
-
-  loginForm.reset();
-}
-
-// ==========================================
-// EVENT LISTENER
-// ==========================================
-
-loginForm.addEventListener("submit", loginUser);
+});
