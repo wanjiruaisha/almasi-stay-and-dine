@@ -1,0 +1,161 @@
+/* ==========================================
+   AUTHENTICATION PAGES
+   ========================================== */
+
+.auth-page {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  background:
+    linear-gradient(rgba(39, 24, 12, 0.65), rgba(39, 24, 12, 0.65)),
+    url("../assets/images/room-interior.jpg") center/cover no-repeat;
+}
+
+.auth-page-content {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.auth-brand {
+  color: #fff;
+  max-width: 550px;
+}
+
+.auth-brand .section-label {
+  color: #f5c16c;
+}
+
+.auth-brand h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+.auth-brand p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #f6ead8;
+}
+
+.auth-outline {
+  margin-top: 1.5rem;
+}
+
+.auth-form-card {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.auth-form-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3b2412;
+}
+
+.auth-form-card > p {
+  margin-bottom: 1.5rem;
+  color: #6f5a45;
+}
+
+.auth-form-card .form-group {
+  margin-bottom: 1rem;
+}
+
+.auth-form-card label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #3b2412;
+}
+
+.auth-form-card input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d8c6ac;
+  border-radius: 0.8rem;
+  font: inherit;
+  background: #fffaf3;
+  outline: none;
+}
+
+.auth-form-card input:focus {
+  border-color: #b8894d;
+  box-shadow: 0 0 0 3px rgba(184, 137, 77, 0.18);
+}
+
+.auth-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.auth-small-text {
+  margin-top: 1.2rem;
+  text-align: center;
+  color: #6f5a45;
+}
+
+.auth-small-text a {
+  color: #b8894d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-small-text a:hover {
+  text-decoration: underline;
+}
+
+.auth-message {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success-message {
+  background: #e8f5e9;
+  color: #2f7d32;
+}
+
+.error-message {
+  background: #fdecea;
+  color: #b00020;
+}
+
+/* ==========================================
+   RESPONSIVE AUTH LAYOUT
+   ========================================== */
+
+@media (max-width: 900px) {
+  .auth-page-content {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-brand {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .auth-form-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-page {
+    padding: 2rem 0;
+  }
+
+  .auth-form-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+}
