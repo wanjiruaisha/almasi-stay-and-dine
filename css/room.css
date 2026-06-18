@@ -42,3 +42,50 @@
   margin-bottom: 0.5rem;
 }
 
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.booking-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.booking-card,
+.empty-bookings {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #eadbc8;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.booking-card-header span {
+  font-size: 0.85rem;
+  color: #8a6a48;
+}
+
+.booking-card-body {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.booking-card-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eadbc8;
+  color: #5a371d;
+}
