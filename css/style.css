@@ -1207,3 +1207,140 @@ html {
 .error-message {
   color: #b00020;
 }
+/* ==========================================
+   ALMASI DARK MODE
+   ========================================== */
+
+.theme-toggle {
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.25rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background: rgba(184, 137, 77, 0.15);
+  color: #b8894d;
+}
+
+body.dark-mode {
+  background: #1a1410;
+  color: #f7ead8;
+}
+
+body.dark-mode .site-header,
+body.dark-mode .footer {
+  background: #241a14;
+  color: #f7ead8;
+}
+
+body.dark-mode .logo,
+body.dark-mode .nav-links a {
+  color: #f7ead8;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .theme-toggle {
+  color: #d6a75d;
+}
+
+body.dark-mode .page-hero,
+body.dark-mode .cta-section {
+  background: linear-gradient(
+    135deg,
+    #1a1410,
+    #2b1e17
+  );
+}
+
+body.dark-mode .section-padding,
+body.dark-mode .offers,
+body.dark-mode .reservation-section,
+body.dark-mode .rooms-preview,
+body.dark-mode .auth-page {
+  background: #1a1410;
+}
+
+body.dark-mode .meal-card,
+body.dark-mode .offer-card,
+body.dark-mode .room-card,
+body.dark-mode .service-card,
+body.dark-mode .auth-form-card,
+body.dark-mode .booking-card,
+body.dark-mode .booking-stat-card,
+body.dark-mode .admin-booking-card,
+body.dark-mode .stat-card,
+body.dark-mode .cart-drawer,
+body.dark-mode .empty-bookings,
+body.dark-mode .confirmation-card {
+  background: #2a211b;
+  color: #f7ead8;
+  border: 1px solid rgba(214, 167, 93, 0.18);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #fff4e4;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode span {
+  color: #e3d1bd;
+}
+
+body.dark-mode .section-label,
+body.dark-mode .booking-label {
+  color: #d6a75d;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background: #211915;
+  color: #fff4e4;
+  border-color: rgba(214, 167, 93, 0.35);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #bba894;
+}
+
+body.dark-mode .btn-light,
+body.dark-mode .btn-outline {
+  background: transparent;
+  color: #f7ead8;
+  border-color: #d6a75d;
+}
+
+body.dark-mode .btn-light:hover,
+body.dark-mode .btn-outline:hover {
+  background: #d6a75d;
+  color: #1a1410;
+}
+
+body.dark-mode .cart-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .success-message {
+  background: rgba(46, 125, 50, 0.18);
+  color: #9be39f;
+}
+
+body.dark-mode .error-message {
+  background: rgba(176, 0, 32, 0.18);
+  color: #ff9aaa;
+}
