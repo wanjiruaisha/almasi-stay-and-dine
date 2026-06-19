@@ -1,382 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-  <!-- ==========================================
+  <head>
+    <!-- ==========================================
        BASIC PAGE SETUP
        ========================================== -->
-  <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- PAGE TITLE -->
-  <title>
-    About Almasi Stay and Dine | Our Story
-  </title>
+    <!-- PAGE TITLE -->
+    <title>About Almasi Stay and Dine | Our Story</title>
 
-  <!-- LINKING EXTERNAL CSS FILE -->
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
+    <!-- LINKING EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
-  <!-- ==========================================
+  <body>
+    <!-- ==========================================
        HEADER & NAVBAR
        ========================================== -->
-  <header class="site-header">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">◇ Almasi Stay & Dine</a>
 
-    <nav class="navbar container">
+        <!-- HAMBURGER CHECKBOX -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-  <a href="index.html" class="logo">◇ Almasi Stay & Dine</a>
+        <!-- HAMBURGER ICON -->
+        <label for="menu-toggle" class="hamburger"> ☰ </label>
 
-  <!-- HAMBURGER CHECKBOX -->
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
 
-  <!-- HAMBURGER ICON -->
-  <label for="menu-toggle" class="hamburger">
-    ☰
-  </label>
+        <a
+          href="https://wa.me/254713968080"
+          target="_blank"
+          class="btn btn-primary nav-cta"
+        >
+          Order Now
+        </a>
+      </nav>
+    </header>
 
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="rooms.html">Rooms</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-  </ul>
-
-  <a
-    href="https://wa.me/254713968080"
-    target="_blank"
-    class="btn btn-primary nav-cta"
-  >
-    Order Now
-  </a>
-
-</nav>
-
-  </header>
-
-  <!-- ==========================================
+    <!-- ==========================================
        MAIN CONTENT
        ========================================== -->
-  <main>
-
-    <!-- ==========================================
+    <main>
+      <!-- ==========================================
          ABOUT HERO SECTION
          ========================================== -->
-    <section class="page-hero">
+      <section class="page-hero">
+        <div class="container page-hero-content">
+          <p class="section-label">About Us</p>
 
-      <div class="container page-hero-content">
+          <h1>A Homely Place for Quality Meals and Comfortable Stays</h1>
 
-        <p class="section-label">
-          About Us
-        </p>
+          <p>
+            Almasi Stay and Dine brings together affordable traditional meals,
+            clean rooms, and warm hospitality in the heart of Nakuru.
+          </p>
+        </div>
+      </section>
 
-        <h1>
-          A Homely Place for Quality Meals and Comfortable Stays
-        </h1>
-
-        <p>
-          Almasi Stay and Dine brings together affordable traditional meals,
-          clean rooms, and warm hospitality in the heart of Nakuru.
-        </p>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          BUSINESS STORY SECTION
          ========================================== -->
-    <section class="section-padding">
+      <section class="section-padding">
+        <div class="container split-section">
+          <!-- LEFT SIDE IMAGE -->
+          <div class="about-image">
+            <img
+              src="assets/images/about-restaurant.jpg"
+              alt="Almasi Stay and Dine restaurant environment"
+            />
+          </div>
 
-      <div class="container split-section">
+          <!-- RIGHT SIDE TEXT -->
+          <div>
+            <p class="section-label">Our Story</p>
 
-        <!-- LEFT SIDE IMAGE -->
-        <div class="about-image">
+            <h2>Built on Quality, Affordability, and a Homely Feel</h2>
 
-          <img
-            src="assets/images/about-restaurant.jpg"
-            alt="Almasi Stay and Dine restaurant environment"
-          />
+            <p>
+              Almasi Stay and Dine is located in Nakuru town. The business is
+              built around serving healthy, tasty, and affordable meals while
+              also offering clean and comfortable rooms for guests.
+            </p>
 
+            <p>
+              Our goal is to create a welcoming environment where customers can
+              enjoy traditional meals, relax comfortably, and feel at home
+              whether they are visiting for food, takeaway, delivery, or
+              accommodation.
+            </p>
+
+            <a href="menu.html" class="btn btn-primary"> Explore Our Menu </a>
+          </div>
         </div>
+      </section>
 
-        <!-- RIGHT SIDE TEXT -->
-        <div>
-
-          <p class="section-label">
-            Our Story
-          </p>
-
-          <h2>
-            Built on Quality, Affordability, and a Homely Feel
-          </h2>
-
-          <p>
-            Almasi Stay and Dine is located in Nakuru town. The business is built around serving healthy,
-            tasty, and affordable meals while also offering clean and comfortable
-            rooms for guests.
-          </p>
-
-          <p>
-            Our goal is to create a welcoming environment where customers can
-            enjoy traditional meals, relax comfortably, and feel at home whether
-            they are visiting for food, takeaway, delivery, or accommodation.
-          </p>
-
-          <a
-            href="menu.html"
-            class="btn btn-primary"
-          >
-            Explore Our Menu
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    
-
-    <!-- ==========================================
+      <!-- ==========================================
          WHY CHOOSE US SECTION
          ========================================== -->
-    <section class="section-padding">
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Why Choose Us</p>
 
-      <div class="container">
+            <h2>Food, Comfort, and Hospitality in One Place</h2>
 
-        <div class="section-heading">
+            <p>
+              We combine restaurant services and accommodation to give customers
+              a convenient and reliable experience.
+            </p>
+          </div>
 
-          <p class="section-label">
-            Why Choose Us
-          </p>
+          <div class="cards-grid">
+            <!-- REASON CARD 1 -->
+            <article class="offer-card">
+              <span>01</span>
 
-          <h2>
-            Food, Comfort, and Hospitality in One Place
-          </h2>
+              <h3>Affordable Meals</h3>
 
-          <p>
-            We combine restaurant services and accommodation to give customers
-            a convenient and reliable experience.
-          </p>
+              <p>
+                We focus on serving tasty and filling meals at friendly prices
+                that customers can enjoy regularly.
+              </p>
+            </article>
 
+            <!-- REASON CARD 2 -->
+            <article class="offer-card">
+              <span>02</span>
+
+              <h3>Clean Accommodation</h3>
+
+              <p>
+                Our rooms are designed to offer guests a clean, peaceful, and
+                comfortable place to rest.
+              </p>
+            </article>
+
+            <!-- REASON CARD 3 -->
+            <article class="offer-card">
+              <span>03</span>
+
+              <h3>Convenient Location</h3>
+
+              <p>
+                Located in Nakuru town Almasi is easy to access for both meals
+                and stays.
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="cards-grid">
-
-          <!-- REASON CARD 1 -->
-          <article class="offer-card">
-
-            <span>01</span>
-
-            <h3>
-              Affordable Meals
-            </h3>
-
-            <p>
-              We focus on serving tasty and filling meals at friendly prices
-              that customers can enjoy regularly.
-            </p>
-
-          </article>
-
-          <!-- REASON CARD 2 -->
-          <article class="offer-card">
-
-            <span>02</span>
-
-            <h3>
-              Clean Accommodation
-            </h3>
-
-            <p>
-              Our rooms are designed to offer guests a clean, peaceful,
-              and comfortable place to rest.
-            </p>
-
-          </article>
-
-          <!-- REASON CARD 3 -->
-          <article class="offer-card">
-
-            <span>03</span>
-
-            <h3>
-              Convenient Location
-            </h3>
-
-            <p>
-              Located in Nakuru town
-              Almasi is easy to access for both meals and stays.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          LOCATION HIGHLIGHT SECTION
          ========================================== -->
-    <section class="rooms-preview section-padding">
+      <section class="rooms-preview section-padding">
+        <div class="container split-section">
+          <!-- LEFT SIDE TEXT -->
+          <div>
+            <p class="section-label">Visit Us</p>
 
-      <div class="container split-section">
+            <h2>Located in Nakuru</h2>
 
-        <!-- LEFT SIDE TEXT -->
-        <div>
+            <p>
+              You can find Almasi Stay and Dine near Milimani Estate in Nakuru
+              town. Customers can visit for dine-in meals, takeaway, delivery
+              inquiries, or room bookings.
+            </p>
 
-          <p class="section-label">
-            Visit Us
-          </p>
-
-          <h2>
-            Located in Nakuru 
-          </h2>
-
-          <p>
-            You can find Almasi Stay and Dine near Milimani Estate in Nakuru town. Customers can visit for dine-in meals, takeaway,
-            delivery inquiries, or room bookings.
-          </p>
-
-          <a
-            href="contact.html"
-            class="btn btn-primary"
-          >
-            Contact Us
-          </a>
-
+            <a href="contact.html" class="btn btn-primary"> Contact Us </a>
+          </div>
         </div>
+      </section>
 
-        
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          CALL TO ACTION SECTION
          ========================================== -->
-    <section class="cta-section">
+      <section class="cta-section">
+        <div class="container cta-content">
+          <h2>Ready to Visit Almasi?</h2>
 
-      <div class="container cta-content">
+          <p>
+            Reach out through WhatsApp or phone call for meals, room bookings,
+            or general inquiries.
+          </p>
 
-        <h2>
-          Ready to Visit Almasi?
-        </h2>
+          <div class="hero-buttons">
+            <a
+              href="https://wa.me/254713968080"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              WhatsApp Us
+            </a>
 
-        <p>
-          Reach out through WhatsApp or phone call for meals, room bookings,
-          or general inquiries.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a
-            href="https://wa.me/254713968080"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            WhatsApp Us
-          </a>
-
-          <a
-            href="tel:0713968080"
-            class="btn btn-light"
-          >
-            Call Now
-          </a>
-
+            <a href="tel:0713968080" class="btn btn-light"> Call Now </a>
+          </div>
         </div>
+      </section>
+    </main>
 
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- ==========================================
+    <!-- ==========================================
        FOOTER SECTION
        ========================================== -->
-  <footer class="footer">
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- FOOTER BRANDING -->
+        <div>
+          <h3>◇ Almasi Stay and Dine</h3>
 
-    <div class="container footer-grid">
+          <p>
+            Affordable, healthy, tasty meals and comfortable rooms in Nakuru.
+          </p>
+        </div>
 
-      <!-- FOOTER BRANDING -->
-      <div>
+        <!-- QUICK LINKS -->
+        <div>
+          <h4>Quick Links</h4>
 
-        <h3>
-          ◇ Almasi Stay and Dine
-        </h3>
+          <a href="index.html">Home</a>
 
-        <p>
-          Affordable, healthy, tasty meals and comfortable rooms in Nakuru.
-        </p>
+          <a href="menu.html">Menu</a>
 
+          <a href="rooms.html">Rooms</a>
+
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div>
+          <h4>Contact</h4>
+
+          <p>0713968080 / 0726829468</p>
+
+          <p>Nakuru town</p>
+
+          <p>TikTok: Almasi Stay and Dine</p>
+        </div>
       </div>
 
-      <!-- QUICK LINKS -->
-      <div>
-
-        <h4>
-          Quick Links
-        </h4>
-
-        <a href="index.html">Home</a>
-
-        <a href="menu.html">Menu</a>
-
-        <a href="rooms.html">Rooms</a>
-
-        <a href="contact.html">Contact</a>
-
-      </div>
-
-      <!-- CONTACT DETAILS -->
-      <div>
-
-        <h4>
-          Contact
-        </h4>
-
-        <p>
-          0713968080 / 0726829468
-        </p>
-
-        <p>
-          Nakuru town
-        </p>
-
-        <p>
-          TikTok: Almasi Stay and Dine
-        </p>
-
-      </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <p class="footer-bottom">
-      © 2026 Almasi Stay and Dine
-      All rights reserved.
-    </p>
-
-  </footer>
-
-</body>
-
+      <!-- COPYRIGHT -->
+      <p class="footer-bottom">
+        © 2026 Almasi Stay and Dine All rights reserved.
+      </p>
+    </footer>
+    <script src="js/theme.js"></script>
+  </body>
 </html>

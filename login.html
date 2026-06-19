@@ -1,166 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8">
+    <title>Login | Almasi Stay and Dine</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-  <title>Login | Almasi Stay and Dine</title>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo"> ◇ Almasi Stay and Dine </a>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/auth.css">
+        <!-- NAV LINKS -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
 
-</head>
+          <li>
+            <a href="about.html">About</a>
+          </li>
 
-<body>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
 
-  <!-- HEADER -->
-  <header class="site-header">
+          <li>
+            <a href="rooms.html">Rooms</a>
+          </li>
 
-    <nav class="navbar container">
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
 
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-        ◇ Almasi Stay and Dine
-      </a>
+        <!-- CREATE ACCOUNT BUTTON -->
+        <a href="create-account.html" class="btn btn-primary">
+          Create Account
+        </a>
+      </nav>
+    </header>
 
-      <!-- NAV LINKS -->
-      <ul class="nav-links">
+    <main>
+      <!-- LOGIN SECTION -->
+      <section class="auth-page">
+        <div class="container auth-page-content">
+          <!-- LEFT SIDE -->
+          <div class="auth-brand">
+            <p class="section-label">Welcome Back</p>
 
-        <li>
-          <a href="index.html">Home</a>
-        </li>
+            <h1>Login to Your Almasi Account</h1>
 
-        <li>
-          <a href="about.html">About</a>
-        </li>
+            <p>
+              Access your account to make reservations, send inquiries, and stay
+              connected with Almasi Stay and Dine.
+            </p>
+          </div>
 
-        <li>
-          <a href="menu.html">Menu</a>
-        </li>
+          <!-- LOGIN FORM -->
+          <form id="loginForm" class="auth-form-card">
+            <h2>Login</h2>
 
-        <li>
-          <a href="rooms.html">Rooms</a>
-        </li>
+            <p>Enter your details below to continue.</p>
 
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
+            <!-- EMAIL -->
+            <div class="form-group">
+              <label for="email"> Email Address </label>
 
-      </ul>
+              <input
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
 
-      <!-- CREATE ACCOUNT BUTTON -->
-      <a href="create-account.html" class="btn btn-primary">
-        Create Account
-      </a>
+            <!-- PASSWORD -->
+            <div class="form-group">
+              <label for="password"> Password </label>
 
-    </nav>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
 
-  </header>
+            <!-- LOGIN BUTTON -->
+            <button type="submit" class="btn btn-primary auth-btn">
+              Login
+            </button>
 
-  <main>
+            <!-- JavaScript displays login success or error messages here -->
+            <p id="loginMessage" class="auth-message"></p>
 
-    <!-- LOGIN SECTION -->
-    <section class="auth-page">
+            <!-- SWITCH PAGE -->
+            <p class="auth-small-text">
+              Don't have an account?
 
-      <div class="container auth-page-content">
-
-        <!-- LEFT SIDE -->
-        <div class="auth-brand">
-
-          <p class="section-label">
-            Welcome Back
-          </p>
-
-          <h1>
-            Login to Your Almasi Account
-          </h1>
-
-          <p>
-            Access your account to make reservations,
-            send inquiries, and stay connected with
-            Almasi Stay and Dine.
-          </p>
-
-          
-
+              <a href="create-account.html"> Create one </a>
+            </p>
+          </form>
         </div>
-
-        <!-- LOGIN FORM -->
-        <form id="loginForm" class="auth-form-card">
-
-          <h2>Login</h2>
-
-          <p>
-            Enter your details below to continue.
-          </p>
-
-          <!-- EMAIL -->
-          <div class="form-group">
-
-            <label for="email">
-              Email Address
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              placeholder="example@gmail.com"
-              required
-            >
-
-          </div>
-
-          <!-- PASSWORD -->
-          <div class="form-group">
-
-            <label for="password">
-              Password
-            </label>
-
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            >
-
-          </div>
-
-          <!-- LOGIN BUTTON -->
-          <button type="submit" class="btn btn-primary auth-btn">
-            Login
-          </button>
-
-
-          <!-- JavaScript displays login success or error messages here -->
-          <p id="loginMessage" class="auth-message"></p>
-
-
-          <!-- SWITCH PAGE -->
-          <p class="auth-small-text">
-
-            Don't have an account?
-
-            <a href="create-account.html">
-              Create one
-            </a>
-
-          </p>
-
-        </form>
-
-      </div>
-
-    </section>
-
-  </main>
-<script src="js/login.js"></script>
-</body>
-
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
 </html>

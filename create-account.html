@@ -1,210 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8">
+    <title>Create Account | Almasi Stay and Dine</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-  <title>Create Account | Almasi Stay and Dine</title>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo"> ◇ Almasi Stay and Dine </a>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/auth.css">
+        <!-- NAV LINKS -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
 
-</head>
+          <li>
+            <a href="about.html">About</a>
+          </li>
 
-<body>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
 
-  <!-- HEADER -->
-  <header class="site-header">
+          <li>
+            <a href="rooms.html">Rooms</a>
+          </li>
 
-    <nav class="navbar container">
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
 
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-        ◇ Almasi Stay and Dine
-      </a>
+        <!-- LOGIN BUTTON -->
+        <a href="login.html" class="btn btn-primary"> Login </a>
+      </nav>
+    </header>
 
-      <!-- NAV LINKS -->
-      <ul class="nav-links">
+    <main>
+      <!-- CREATE ACCOUNT SECTION -->
+      <section class="auth-page">
+        <div class="container auth-page-content">
+          <!-- LEFT SIDE -->
+          <div class="auth-brand">
+            <p class="section-label">Join Almasi</p>
 
-        <li>
-          <a href="index.html">Home</a>
-        </li>
+            <h1>Create Your Customer Account</h1>
 
-        <li>
-          <a href="about.html">About</a>
-        </li>
+            <p>
+              Sign up to make reservations, send inquiries, and enjoy a smoother
+              experience with Almasi Stay and Dine.
+            </p>
+          </div>
 
-        <li>
-          <a href="menu.html">Menu</a>
-        </li>
+          <!-- CREATE ACCOUNT FORM -->
 
-        <li>
-          <a href="rooms.html">Rooms</a>
-        </li>
+          <!-- Account registration form handled by js/createAccount.js -->
+          <form id="createAccountForm" class="auth-form-card">
+            <h2>Create Account</h2>
 
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
+            <p>Fill in your details to get started.</p>
 
-      </ul>
+            <!-- FULL NAME -->
+            <div class="form-group">
+              <label for="fullname"> Full Name </label>
 
-      <!-- LOGIN BUTTON -->
-      <a href="login.html" class="btn btn-primary">
-        Login
-      </a>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
 
-    </nav>
+            <!-- EMAIL -->
+            <div class="form-group">
+              <label for="email"> Email Address </label>
 
-  </header>
+              <input
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
 
-  <main>
+            <!-- PHONE -->
+            <div class="form-group">
+              <label for="phone"> Phone Number </label>
 
-    <!-- CREATE ACCOUNT SECTION -->
-    <section class="auth-page">
+              <input type="tel" id="phone" placeholder="07XXXXXXXX" />
+            </div>
 
-      <div class="container auth-page-content">
+            <!-- PASSWORD -->
+            <div class="form-group">
+              <label for="password"> Password </label>
 
-        <!-- LEFT SIDE -->
-        <div class="auth-brand">
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                minlength="6"
+                required
+              />
+            </div>
 
-          <p class="section-label">
-            Join Almasi
-          </p>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
 
-          <h1>
-            Create Your Customer Account
-          </h1>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                minlength="6"
+                required
+              />
+            </div>
 
-          <p>
-            Sign up to make reservations,
-            send inquiries, and enjoy a smoother
-            experience with Almasi Stay and Dine.
-          </p>
+            <!-- CREATE ACCOUNT BUTTON -->
+            <button type="submit" class="btn btn-primary auth-btn">
+              Create Account
+            </button>
 
-         
+            <!-- JavaScript displays account creation feedback here -->
+            <p id="accountMessage" class="auth-message"></p>
+
+            <!-- SWITCH PAGE -->
+            <p class="auth-small-text">
+              Already have an account?
+
+              <a href="login.html"> Login here </a>
+            </p>
+          </form>
         </div>
-
-        <!-- CREATE ACCOUNT FORM -->
-
-        <!-- Account registration form handled by js/createAccount.js -->
-        <form  id="createAccountForm"  class="auth-form-card">
-
-          <h2>Create Account</h2>
-
-          <p>
-            Fill in your details to get started.
-          </p>
-
-          <!-- FULL NAME -->
-          <div class="form-group">
-
-            <label for="fullname">
-              Full Name
-            </label>
-
-            <input
-              type="text"
-              id="fullname"
-              placeholder="Enter your full name"
-              required
-            >
-
-          </div>
-
-          <!-- EMAIL -->
-          <div class="form-group">
-
-            <label for="email">
-              Email Address
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              placeholder="example@gmail.com"
-              required
-            >
-
-          </div>
-
-          <!-- PHONE -->
-          <div class="form-group">
-
-            <label for="phone">
-              Phone Number
-            </label>
-
-            <input
-              type="tel"
-              id="phone"
-              placeholder="07XXXXXXXX"
-            >
-
-          </div>
-
-          <!-- PASSWORD -->
-          <div class="form-group">
-
-            <label for="password">
-              Password
-            </label>
-
-            <input
-              type="password"
-              id="password"
-              placeholder="Create a password"
-              minlength="6"
-              required
-            >
-
-          </div>
-
-          <div class="form-group">
-            <label for="confirmPassword">Confirm Password</label>
-
-            <input
-              type="password"
-              id="confirmPassword"
-              placeholder="Confirm your password"
-              minlength="6"
-              required
-            >
-          </div>
-
-          <!-- CREATE ACCOUNT BUTTON -->
-          <button type="submit" class="btn btn-primary auth-btn">
-            Create Account
-          </button>
-
-          <!-- JavaScript displays account creation feedback here -->
-          <p id="accountMessage" class="auth-message"></p>
-
-
-          <!-- SWITCH PAGE -->
-          <p class="auth-small-text">
-
-            Already have an account?
-
-            <a href="login.html">
-              Login here
-            </a>
-
-          </p>
-
-        </form>
-
-      </div>
-
-    </section>
-
-  </main>
-<script src="js/createAccount.js"></script>
-</body>
-
+      </section>
+    </main>
+    <script src="js/createAccount.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
 </html>

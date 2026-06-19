@@ -1,522 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-  <!-- ==========================================
+  <head>
+    <!-- ==========================================
        BASIC PAGE SETUP
        ========================================== -->
-  <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- PAGE TITLE -->
-  <title>
-    Contact Us | Almasi Stay and Dine
-  </title>
+    <!-- PAGE TITLE -->
+    <title>Contact Us | Almasi Stay and Dine</title>
 
-  <!-- LINKING EXTERNAL CSS FILE -->
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
+    <!-- LINKING EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
-  <!-- ==========================================
+  <body>
+    <!-- ==========================================
        HEADER & NAVBAR
        ========================================== -->
-  <header class="site-header">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">◇ Almasi Stay and Dine</a>
 
-    <nav class="navbar container">
+        <!-- HAMBURGER CHECKBOX -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-  <a href="index.html" class="logo">◇ Almasi Stay and Dine</a>
+        <!-- HAMBURGER ICON -->
+        <label for="menu-toggle" class="hamburger"> ☰ </label>
 
-  <!-- HAMBURGER CHECKBOX -->
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
 
-  <!-- HAMBURGER ICON -->
-  <label for="menu-toggle" class="hamburger">
-    ☰
-  </label>
+        <a
+          href="https://wa.me/254713968080"
+          target="_blank"
+          class="btn btn-primary nav-cta"
+        >
+          Order Now
+        </a>
+      </nav>
+    </header>
 
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="rooms.html">Rooms</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-  </ul>
-
-  <a
-    href="https://wa.me/254713968080"
-    target="_blank"
-    class="btn btn-primary nav-cta"
-  >
-    Order Now
-  </a>
-
-</nav>
-  </header>
-
-  <!-- ==========================================
+    <!-- ==========================================
        MAIN CONTENT
        ========================================== -->
-  <main>
-
-    <!-- ==========================================
+    <main>
+      <!-- ==========================================
          CONTACT HERO SECTION
          ========================================== -->
-    <section class="page-hero">
+      <section class="page-hero">
+        <div class="container page-hero-content">
+          <p class="section-label">Contact Us</p>
 
-      <div class="container page-hero-content">
+          <h1>We'd Love to Hear From You</h1>
 
-        <p class="section-label">
-          Contact Us
-        </p>
+          <p>
+            Reach out for food orders, reservations, room bookings, delivery
+            inquiries, or general questions.
+          </p>
+        </div>
+      </section>
 
-        <h1>
-          We'd Love to Hear From You
-        </h1>
-
-        <p>
-          Reach out for food orders, reservations, room bookings,
-          delivery inquiries, or general questions.
-        </p>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          CONTACT INFORMATION SECTION
          ========================================== -->
-    <section class="section-padding">
+      <section class="section-padding">
+        <div class="container">
+          <!-- SECTION HEADING -->
+          <div class="section-heading">
+            <p class="section-label">Get In Touch</p>
 
-      <div class="container">
+            <h2>Contact Information</h2>
 
-        <!-- SECTION HEADING -->
-        <div class="section-heading">
+            <p>
+              Customers can contact Almasi Stay and Dine through phone,
+              WhatsApp, or social media.
+            </p>
+          </div>
 
-          <p class="section-label">
-            Get In Touch
-          </p>
+          <!-- CONTACT GRID -->
+          <div class="cards-grid">
+            <!-- PHONE CONTACT CARD -->
+            <article class="offer-card">
+              <span>Phone Numbers</span>
 
-          <h2>
-            Contact Information
-          </h2>
+              <h3>Call Us</h3>
 
-          <p>
-            Customers can contact Almasi Stay and Dine through phone,
-            WhatsApp, or social media.
-          </p>
+              <p>
+                Reach us directly for bookings, reservations, deliveries, or
+                inquiries.
+              </p>
 
+              <strong> 0713968080 </strong>
+
+              <strong> 0726829468 </strong>
+            </article>
+
+            <!-- WHATSAPP CONTACT CARD -->
+            <article class="offer-card">
+              <span>WhatsApp</span>
+
+              <h3>Chat With Us</h3>
+
+              <p>
+                Place orders or make room reservations quickly through WhatsApp.
+              </p>
+
+              <a
+                href="https://wa.me/254713968080"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Open WhatsApp
+              </a>
+            </article>
+
+            <!-- LOCATION CARD -->
+            <article class="offer-card">
+              <span>Location</span>
+
+              <h3>Visit Our Location</h3>
+
+              <p>
+                Located in Nakuru Town with easy access for dine-in meals and
+                accommodation.
+              </p>
+
+              <strong> Nakuru Town </strong>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <!-- CONTACT GRID -->
-        <div class="cards-grid">
-
-          <!-- PHONE CONTACT CARD -->
-          <article class="offer-card">
-
-            <span>Phone Numbers</span>
-
-            <h3>
-              Call Us
-            </h3>
-
-            <p>
-              Reach us directly for bookings, reservations,
-              deliveries, or inquiries.
-            </p>
-
-            <strong>
-              0713968080
-            </strong>
-
-            <strong>
-              0726829468
-            </strong>
-
-          </article>
-
-          <!-- WHATSAPP CONTACT CARD -->
-          <article class="offer-card">
-
-            <span>WhatsApp</span>
-
-            <h3>
-              Chat With Us
-            </h3>
-
-            <p>
-              Place orders or make room reservations quickly through WhatsApp.
-            </p>
-
-            <a
-              href="https://wa.me/254713968080"
-              target="_blank"
-              class="btn btn-primary"
-            >
-              Open WhatsApp
-            </a>
-
-          </article>
-
-          <!-- LOCATION CARD -->
-          <article class="offer-card">
-
-            <span>Location</span>
-
-            <h3>
-              Visit Our Location
-            </h3>
-
-            <p>
-              Located in Nakuru Town with easy access
-              for dine-in meals and accommodation.
-            </p>
-
-            <strong>
-              Nakuru Town
-            </strong>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          CONTACT FORM SECTION
          ========================================== -->
-    <section class="reservation-section section-padding">
+      <section class="reservation-section section-padding">
+        <div class="container reservation-content">
+          <!-- LEFT SIDE CONTACT TEXT -->
+          <div class="reservation-text">
+            <p class="section-label">Send a Message</p>
 
-      <div class="container reservation-content">
+            <h2>Contact Almasi Stay and Dine</h2>
 
-        <!-- LEFT SIDE CONTACT TEXT -->
-        <div class="reservation-text">
+            <p>
+              Fill in your details and contact us directly through WhatsApp for
+              quick assistance and responses.
+            </p>
 
-          <p class="section-label">
-            Send a Message
-          </p>
+            <!-- CONTACT BUTTONS -->
+            <div class="hero-buttons">
+              <a
+                href="https://wa.me/254713968080"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                WhatsApp Us
+              </a>
 
-          <h2>
-            Contact Almasi Stay and Dine
-          </h2>
+              <a href="tel:0713968080" class="btn btn-outline"> Call Us </a>
+            </div>
+          </div>
 
-          <p>
-            Fill in your details and contact us directly through WhatsApp
-            for quick assistance and responses.
-          </p>
+          <!-- RIGHT SIDE CONTACT FORM -->
+          <form class="reservation-form">
+            <!-- FULL NAME -->
+            <div class="form-group">
+              <label for="name"> Full Name </label>
 
-          <!-- CONTACT BUTTONS -->
-          <div class="hero-buttons">
+              <input type="text" id="name" placeholder="Enter your full name" />
+            </div>
 
+            <!-- EMAIL -->
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+
+              <input type="email" id="email" placeholder="example@gmail.com" />
+            </div>
+
+            <!-- PHONE -->
+            <div class="form-group">
+              <label for="phone"> Phone Number </label>
+
+              <input type="tel" id="phone" placeholder="07XXXXXXXX" />
+            </div>
+
+            <!-- MESSAGE -->
+            <div class="form-group">
+              <label for="message"> Message </label>
+
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <!-- SEND MESSAGE BUTTON -->
             <a
               href="https://wa.me/254713968080"
               target="_blank"
-              class="btn btn-primary"
+              class="btn btn-primary reservation-btn"
             >
-              WhatsApp Us
+              Send Message
             </a>
-
-            <a
-              href="tel:0713968080"
-              class="btn btn-outline"
-            >
-              Call Us
-            </a>
-
-          </div>
-
+          </form>
         </div>
+      </section>
 
-        <!-- RIGHT SIDE CONTACT FORM -->
-        <form class="reservation-form">
-
-          <!-- FULL NAME -->
-          <div class="form-group">
-
-            <label for="name">
-              Full Name
-            </label>
-
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your full name"
-            />
-
-          </div>
-
-          <!-- EMAIL -->
-          <div class="form-group">
-
-            <label for="email">
-              Email Address
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              placeholder="example@gmail.com"
-            />
-
-          </div>
-
-          <!-- PHONE -->
-          <div class="form-group">
-
-            <label for="phone">
-              Phone Number
-            </label>
-
-            <input
-              type="tel"
-              id="phone"
-              placeholder="07XXXXXXXX"
-            />
-
-          </div>
-
-          <!-- MESSAGE -->
-          <div class="form-group">
-
-            <label for="message">
-              Message
-            </label>
-
-            <textarea
-              id="message"
-              rows="5"
-              placeholder="Type your message here..."
-            ></textarea>
-
-          </div>
-
-          <!-- SEND MESSAGE BUTTON -->
-          <a
-            href="https://wa.me/254713968080"
-            target="_blank"
-            class="btn btn-primary reservation-btn"
-          >
-            Send Message
-          </a>
-
-        </form>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          BUSINESS HOURS SECTION
          ========================================== -->
-    <section class="section-padding">
+      <section class="section-padding">
+        <div class="container">
+          <!-- SECTION HEADING -->
+          <div class="section-heading">
+            <p class="section-label">Availability</p>
 
-      <div class="container">
+            <h2>Business Hours</h2>
 
-        <!-- SECTION HEADING -->
-        <div class="section-heading">
+            <p>
+              Customers are welcome throughout the week for meals and
+              accommodation.
+            </p>
+          </div>
 
-          <p class="section-label">
-            Availability
-          </p>
+          <!-- HOURS GRID -->
+          <div class="services-grid">
+            <div class="service-card">
+              Monday – Friday <br />
+              7:00 AM – 10:00 PM
+            </div>
 
-          <h2>
-            Business Hours
-          </h2>
+            <div class="service-card">
+              Saturday <br />
+              8:00 AM – 11:00 PM
+            </div>
 
-          <p>
-            Customers are welcome throughout the week for meals and accommodation.
-          </p>
-
+            <div class="service-card">
+              Sunday <br />
+              8:00 AM – 9:00 PM
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- HOURS GRID -->
-        <div class="services-grid">
-
-          <div class="service-card">
-            Monday – Friday <br />
-            7:00 AM – 10:00 PM
-          </div>
-
-          <div class="service-card">
-            Saturday <br />
-            8:00 AM – 11:00 PM
-          </div>
-
-          <div class="service-card">
-            Sunday <br />
-            8:00 AM – 9:00 PM
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          SOCIAL MEDIA SECTION
          ========================================== -->
-    <section class="section-padding">
+      <section class="section-padding">
+        <div class="container">
+          <!-- SECTION HEADING -->
+          <div class="section-heading">
+            <p class="section-label">Social Media</p>
 
-      <div class="container">
+            <h2>Connect With Us Online</h2>
 
-        <!-- SECTION HEADING -->
-        <div class="section-heading">
+            <p>
+              Follow Almasi Stay and Dine on social media for updates, offers,
+              and food content.
+            </p>
+          </div>
 
-          <p class="section-label">
-            Social Media
-          </p>
+          <!-- SOCIAL MEDIA CARDS -->
+          <div class="cards-grid">
+            <!-- TIKTOK CARD -->
+            <article class="offer-card">
+              <span>TikTok</span>
 
-          <h2>
-            Connect With Us Online
-          </h2>
+              <h3>Almasi Stay and Dine</h3>
 
-          <p>
-            Follow Almasi Stay and Dine on social media for updates,
-            offers, and food content.
-          </p>
+              <p>
+                Follow us for food highlights, offers, and restaurant updates.
+              </p>
+            </article>
 
+            <!-- FACEBOOK CARD -->
+            <article class="offer-card">
+              <span>Facebook</span>
+
+              <h3>Coming Soon</h3>
+
+              <p>Our official Facebook page will be available soon.</p>
+            </article>
+
+            <!-- WHATSAPP CARD -->
+            <article class="offer-card">
+              <span>WhatsApp</span>
+
+              <h3>Fast Responses</h3>
+
+              <p>Use WhatsApp for reservations, orders, and quick inquiries.</p>
+            </article>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <!-- SOCIAL MEDIA CARDS -->
-        <div class="cards-grid">
-
-          <!-- TIKTOK CARD -->
-          <article class="offer-card">
-
-            <span>TikTok</span>
-
-            <h3>
-              Almasi Stay and Dine
-            </h3>
-
-            <p>
-              Follow us for food highlights, offers,
-              and restaurant updates.
-            </p>
-
-          </article>
-
-          <!-- FACEBOOK CARD -->
-          <article class="offer-card">
-
-            <span>Facebook</span>
-
-            <h3>
-              Coming Soon
-            </h3>
-
-            <p>
-              Our official Facebook page will be available soon.
-            </p>
-
-          </article>
-
-          <!-- WHATSAPP CARD -->
-          <article class="offer-card">
-
-            <span>WhatsApp</span>
-
-            <h3>
-              Fast Responses
-            </h3>
-
-            <p>
-              Use WhatsApp for reservations,
-              orders, and quick inquiries.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- ==========================================
+    <!-- ==========================================
        FOOTER SECTION
        ========================================== -->
-  <footer class="footer">
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- FOOTER BRANDING -->
+        <div>
+          <h3>◇ Almasi Stay and Dine</h3>
 
-    <div class="container footer-grid">
+          <p>
+            Affordable, healthy, tasty meals and comfortable rooms in Nakuru.
+          </p>
+        </div>
 
-      <!-- FOOTER BRANDING -->
-      <div>
+        <!-- QUICK LINKS -->
+        <div>
+          <h4>Quick Links</h4>
 
-        <h3>
-          ◇ Almasi Stay and Dine
-        </h3>
+          <a href="index.html">Home</a>
 
-        <p>
-          Affordable, healthy, tasty meals and comfortable rooms in Nakuru.
-        </p>
+          <a href="about.html">About</a>
 
+          <a href="menu.html">Menu</a>
+
+          <a href="rooms.html">Rooms</a>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div>
+          <h4>Contact</h4>
+
+          <p>0713968080 / 0726829468</p>
+
+          <p>Nakuru Town</p>
+
+          <p>TikTok: Almasi Stay and Dine</p>
+        </div>
       </div>
 
-      <!-- QUICK LINKS -->
-      <div>
-
-        <h4>
-          Quick Links
-        </h4>
-
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About</a>
-
-        <a href="menu.html">Menu</a>
-
-        <a href="rooms.html">Rooms</a>
-
-      </div>
-
-      <!-- CONTACT DETAILS -->
-      <div>
-
-        <h4>
-          Contact
-        </h4>
-
-        <p>
-          0713968080 / 0726829468
-        </p>
-
-        <p>
-          Nakuru Town
-        </p>
-
-        <p>
-          TikTok: Almasi Stay and Dine
-        </p>
-
-      </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <p class="footer-bottom">
-      © 2026 Almasi Eateries.
-      All rights reserved.
-    </p>
-
-  </footer>
-
-</body>
-
+      <!-- COPYRIGHT -->
+      <p class="footer-bottom">© 2026 Almasi Eateries. All rights reserved.</p>
+    </footer>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
