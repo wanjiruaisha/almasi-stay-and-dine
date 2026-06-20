@@ -1492,7 +1492,34 @@ body.dark-mode .booking-card-header,
 body.dark-mode .booking-card-footer {
   border-color: rgba(214, 167, 93, 0.2);
 }
+/* ==========================================
+   THEME TOGGLE VISIBILITY FIX
+   ========================================== */
 
+.site-header .theme-toggle {
+  color: #fff4e4;
+  background: rgba(255, 244, 228, 0.12);
+  border: 1px solid rgba(255, 244, 228, 0.35);
+}
+
+.site-header .theme-toggle:hover {
+  background: #b8894d;
+  color: #ffffff;
+  border-color: #b8894d;
+}
+
+/* Dark mode version */
+body.dark-mode .site-header .theme-toggle {
+  color: #f7ead8;
+  background: rgba(214, 167, 93, 0.16);
+  border-color: rgba(214, 167, 93, 0.4);
+}
+
+body.dark-mode .site-header .theme-toggle:hover {
+  background: #d6a75d;
+  color: #1a1410;
+  border-color: #d6a75d;
+}
 @media (max-width: 768px) {
   .booking-stats {
     grid-template-columns: 1fr;
