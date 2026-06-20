@@ -14,7 +14,7 @@
 
 .auth-page-content {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: 1fr 620px;
   gap: 3rem;
   align-items: center;
 }
