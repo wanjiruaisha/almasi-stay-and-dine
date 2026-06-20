@@ -126,7 +126,22 @@ function createBooking(event) {
 
   bookingForm.reset();
 }
+// ==========================================
+// ADMIN BOOKING LINK VISIBILITY
+// ==========================================
 
+function showAdminBookingsLink() {
+  const adminBookingsLink = document.getElementById("adminBookingsLink");
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  if (!adminBookingsLink) return;
+
+  if (currentUser && currentUser.role === "admin") {
+    adminBookingsLink.classList.remove("hidden");
+  }
+}
+
+showAdminBookingsLink();
 // ==========================================
 // EVENT LISTENERS
 // ==========================================
