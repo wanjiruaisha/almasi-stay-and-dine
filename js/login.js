@@ -1,4 +1,11 @@
 // ==========================================
+// ADMIN ACCOUNT DETAILS
+// ==========================================
+
+const ADMIN_EMAIL = "admin@almasi.com";
+const ADMIN_PASSWORD = "admin123";
+
+// ==========================================
 // AUTHENTICATION SERVICE CLASS
 // ==========================================
 
@@ -7,7 +14,30 @@ class AuthService {
     return JSON.parse(localStorage.getItem("almasiUser"));
   }
 
+  static saveCurrentUser(user) {
+    localStorage.setItem("currentUser", JSON.stringify(user));
+    localStorage.setItem("isLoggedIn", "true");
+  }
+
   static login(email, password) {
+    // Admin login check
+    if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
+      const adminUser = {
+        fullName: "System Admin",
+        email: ADMIN_EMAIL,
+        role: "admin"
+      };
+
+      this.saveCurrentUser(adminUser);
+
+      return {
+        success: true,
+        role: "admin",
+        message: "Welcome back, System Admin!"
+      };
+    }
+
+    // Customer login check
     const storedUser = this.getUser();
 
     if (!storedUser) {
@@ -24,10 +54,18 @@ class AuthService {
       };
     }
 
-    localStorage.setItem("isLoggedIn", "true");
+    const customerUser = {
+      fullName: storedUser.fullName,
+      email: storedUser.email,
+      phone: storedUser.phone,
+      role: "customer"
+    };
+
+    this.saveCurrentUser(customerUser);
 
     return {
       success: true,
+      role: "customer",
       message: `Welcome back, ${storedUser.fullName}!`
     };
   }
@@ -61,5 +99,13 @@ loginForm.addEventListener("submit", function (event) {
 
   if (result.success) {
     loginForm.reset();
+
+    setTimeout(() => {
+      if (result.role === "admin") {
+        window.location.href = "bookings.html";
+      } else {
+        window.location.href = "index.html";
+      }
+    }, 800);
   }
 });
