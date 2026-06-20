@@ -102,7 +102,7 @@ loginForm.addEventListener("submit", function (event) {
 
     setTimeout(() => {
       if (result.role === "admin") {
-        window.location.href = "bookings.html";
+        window.location.href = "admin-dashboard.html";
       } else {
         window.location.href = "index.html";
       }
