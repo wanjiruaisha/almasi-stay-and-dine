@@ -1504,3 +1504,11 @@ body.dark-mode .booking-card-footer {
     align-items: flex-start;
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.admin-bookings-link {
+  margin-top: 1rem;
+}
