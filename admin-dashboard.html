@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Almasi Stay & Dine</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rooms.css">
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">◇ Almasi Stay & Dine</a>
+
+      <ul class="nav-links">
+        <li><a href="bookings.html">Dashboard</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html">View Site</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+
+        <button id="logoutBtn" class="btn btn-primary" type="button">
+          Logout
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <p class="section-label">Admin Dashboard</p>
+        <h1>Room Booking Management</h1>
+        <p>
+          View and manage customer room reservations made through the
+          Almasi Stay & Dine booking form.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Booking Summary</p>
+          <h2>Reservation Records</h2>
+          <p>
+            These booking records are stored locally using the browser
+            Local Storage API.
+          </p>
+        </div>
+
+        <div class="booking-stats">
+          <article class="booking-stat-card">
+            <span>Total Bookings</span>
+            <strong id="totalBookings">0</strong>
+          </article>
+
+          <article class="booking-stat-card">
+            <span>Total Guests</span>
+            <strong id="totalGuests">0</strong>
+          </article>
+
+          <article class="booking-stat-card">
+            <span>Total Revenue</span>
+            <strong id="totalRevenue">Ksh 0</strong>
+          </article>
+        </div>
+
+        <div class="booking-actions">
+          <a href="rooms.html" class="btn btn-primary">
+            Add New Booking
+          </a>
+
+          <button id="clearBookingsBtn" class="btn btn-light" type="button">
+            Clear All Bookings
+          </button>
+        </div>
+
+        <div id="bookingList" class="booking-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/adminDashboard.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
