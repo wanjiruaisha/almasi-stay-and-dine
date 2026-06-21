@@ -48,6 +48,7 @@ function saveBookings() {
 // ==========================================
 
 function renderBookings() {
+    if (!bookingList) return;
   bookingList.innerHTML = "";
 
   if (bookings.length === 0) {
