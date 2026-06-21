@@ -103,43 +103,58 @@ The design direction focused on:
 # Project Structure
 
 ```txt
-│   about.html
-│   contact.html
-│   create-account.html
-│   index.html
-│   LICENSE
-│   login.html
-│   menu.html
-│   README.md
-│   rooms.html
-│   
-├───.vscode
-│       settings.json
-│       
-├───assets
-│   └───images
-│           about-restaurant.jpg
-│           accomadationspace.jpg
-│           bedsetup.jpg
-│           biryani.jpg
-│           chapati-beef.jpg
-│           double-room.jpg
-│           gallery-screenshot.png
-│           githeri.jpg
-│           herosection-screenshot.png
-│           mukimo.jpg
-│           pilau.jpg
-│           room-interior.jpg
-│           room-screenshot.png
-│           room.jpg
-│           roomservice.jpg
-│           signaturemeals-screenshot.png
-│           single-room.jpg
-│           traditionalmeal.jpg
-│           ugali-fish.jpg
-│           
-└───css
-        style.css
+Almasi-Stay-and-Dine/
+│
+├── index.html
+├── about.html
+├── menu.html
+├── rooms.html
+├── contact.html
+├── login.html
+├── create-account.html
+├── admin-dashboard.html
+│
+├── css/
+│   ├── style.css
+│   ├── room.css
+│   ├── auth.css
+│   └── darkmode.css
+│
+├── js/
+│   ├── menu.js
+│   ├── room.js
+│   ├── login.js
+│   ├── createAccount.js
+│   ├── adminDashboard.js
+│   ├── theme.js
+│   └── utils.js
+│
+├── tests/
+│   └── utils.test.js
+│
+├── assets/
+│   └── images/
+│       ├── pilau.jpg
+│       ├── biryani.jpg
+│       ├── githeri.jpg
+│       ├── ugali-fish.jpg
+│       ├── chapati-beef.jpg
+│       ├── mukimo.jpg
+│       ├── fresh-juice.jpg
+│       ├── soda.jpg
+│       ├── water.jpg
+│       ├── single-room.jpg
+│       ├── double-room.jpg
+│       ├── room-interior.jpg
+│       ├── bedsetup.jpg
+│       ├── accomadationspace.jpg
+│       ├── roomservice.jpg
+│       └── page-hero.jpg
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── .gitignore
         
 ```
 
