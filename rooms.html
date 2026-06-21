@@ -235,59 +235,100 @@
 <section class="reservation-section section-padding">
   <div class="container reservation-content">
 
+    <!-- LEFT SIDE BOOKING INFORMATION -->
     <div class="reservation-text">
       <p class="section-label">Room Booking</p>
+
       <h2>Reserve Your Stay</h2>
+
       <p>
         Fill in your booking details to calculate your stay and save your reservation.
       </p>
+
+      <div class="booking-info-card">
+        <h3>Booking Information</h3>
+
+        <p>Room prices range from:</p>
+
+        <strong>Ksh 1,000 – Ksh 2,500</strong>
+
+        <p>
+          For accurate availability and final pricing, customers are encouraged
+          to contact Almasi Stay and Dine directly.
+        </p>
+
+        <ul class="room-features">
+          <li>Single rooms available</li>
+          <li>Double rooms available</li>
+          <li>WiFi and parking available</li>
+          <li>Room service provided</li>
+        </ul>
+      </div>
     </div>
 
-    <form id="bookingForm" class="reservation-form">
-      <h3>Booking Details</h3>
+    <!-- RIGHT SIDE BOOKING FORM -->
+    <div>
+      <form id="bookingForm" class="reservation-form">
+        <h3>Booking Details</h3>
 
-      <label for="guestName">Full Name</label>
-      <input type="text" id="guestName" placeholder="Enter your full name">
+        <label for="guestName">Full Name</label>
+        <input
+          type="text"
+          id="guestName"
+          placeholder="Enter your full name"
+          required
+        >
 
-      <label for="guestPhone">Phone Number</label>
-      <input type="tel" id="guestPhone" placeholder="0712345678">
+        <label for="guestPhone">Phone Number</label>
+        <input
+          type="tel"
+          id="guestPhone"
+          placeholder="0712345678"
+          required
+        >
 
-      <label for="roomType">Room Type</label>
-      <select id="roomType">
-        <option value="">Select a room</option>
-        <option value="single" data-price="1000">Single Room - Ksh 1,000/night</option>
-        <option value="double" data-price="2500">Double Room - Ksh 2,500/night</option>
-      </select>
+        <label for="roomType">Room Type</label>
+        <select id="roomType" required>
+          <option value="">Select a room</option>
+          <option value="single" data-price="1000">
+            Single Room - Ksh 1,000/night
+          </option>
+          <option value="double" data-price="2500">
+            Double Room - Ksh 2,500/night
+          </option>
+        </select>
 
-      <label for="checkInDate">Check-in Date</label>
-      <input type="date" id="checkInDate">
+        <label for="checkInDate">Check-in Date</label>
+        <input type="date" id="checkInDate" required>
 
-      <label for="checkOutDate">Check-out Date</label>
-      <input type="date" id="checkOutDate">
+        <label for="checkOutDate">Check-out Date</label>
+        <input type="date" id="checkOutDate" required>
 
-      <label for="guestCount">Number of Guests</label>
-      <input type="number" id="guestCount" min="1" value="1">
+        <label for="guestCount">Number of Guests</label>
+        <input type="number" id="guestCount" min="1" value="1" required>
 
-      <button type="submit" class="btn btn-primary ">
-        Confirm Booking
-      </button>
+        <button type="submit" class="btn btn-primary reservation-btn">
+          Confirm Booking
+        </button>
 
-      <p id="bookingMessage" class="booking-message"></p>
-    </form>
+        <p id="bookingMessage" class="booking-message"></p>
+      </form>
 
-    <div class="booking-actions">
-      <a
-  href="admin-dashboard.html"
-  id="adminBookingsLink"
-  class="btn btn-light admin-bookings-link hidden"
->
-  View All Bookings
-</a>
+      <div id="bookingConfirmation"></div>
+
+      <div class="booking-actions">
+        <a
+          href="admin-dashboard.html"
+          id="adminBookingsLink"
+          class="btn btn-light admin-bookings-link hidden"
+        >
+          View All Bookings
+        </a>
+      </div>
     </div>
 
   </div>
 </section>
-
 
 
     
@@ -345,39 +386,7 @@
 
     
 
-        <!-- RIGHT SIDE BOOKING INFO CARD -->
-        <div class="reservation-form booking-info-card">
-
-          <h3>
-            Booking Information
-          </h3>
-
-          <p>
-            Room prices range from:
-          </p>
-
-          <strong>
-            Ksh 1,000 – Ksh 2,500
-          </strong>
-
-          <p>
-            For accurate availability and final pricing, customers are encouraged
-            to contact Almasi Stay and Dine directly.
-          </p>
-
-          <ul class="room-features">
-            <li>Single rooms available</li>
-            <li>Double rooms available</li>
-            <li>WiFi and parking available</li>
-            <li>Room service provided</li>
-          </ul>
-
-        </div>
-
-      </div>
-
-    </section>
-
+        
   </main>
 
   <!-- ==========================================
