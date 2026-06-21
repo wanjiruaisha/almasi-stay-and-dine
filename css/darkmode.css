@@ -1,0 +1,126 @@
+/* ==========================================
+   ALMASI GLOBAL DARK MODE FIXES
+   This file should load LAST
+   ========================================== */
+
+/* Main page background */
+body.dark-mode {
+  background: #1a1410;
+  color: #f7ead8;
+}
+
+/* Sections */
+body.dark-mode .section-padding,
+body.dark-mode .reservation-section,
+body.dark-mode .contact-section,
+body.dark-mode .rooms-preview,
+body.dark-mode .offers,
+body.dark-mode .cta-section {
+  background: #1a1410;
+}
+
+/* Form cards and information cards */
+body.dark-mode .reservation-form,
+body.dark-mode .auth-form-card,
+body.dark-mode .contact-form,
+body.dark-mode .confirmation-card,
+body.dark-mode .booking-card,
+body.dark-mode .empty-bookings,
+body.dark-mode .booking-stat-card,
+body.dark-mode .admin-booking-card {
+  background: #2a211b;
+  color: #f7ead8;
+  border: 1px solid rgba(214, 167, 93, 0.18);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings inside forms/cards */
+body.dark-mode .reservation-form h2,
+body.dark-mode .reservation-form h3,
+body.dark-mode .auth-form-card h2,
+body.dark-mode .auth-form-card h3,
+body.dark-mode .contact-form h2,
+body.dark-mode .contact-form h3,
+body.dark-mode .confirmation-card h2,
+body.dark-mode .confirmation-card h3,
+body.dark-mode .booking-card h2,
+body.dark-mode .booking-card h3,
+body.dark-mode .booking-stat-card strong {
+  color: #fff4e4;
+}
+
+/* Labels */
+body.dark-mode label,
+body.dark-mode .reservation-form label,
+body.dark-mode .auth-form-card label,
+body.dark-mode .contact-form label {
+  color: #fff4e4;
+}
+
+/* Paragraphs and small text inside forms/cards */
+body.dark-mode .reservation-form p,
+body.dark-mode .auth-form-card p,
+body.dark-mode .contact-form p,
+body.dark-mode .confirmation-card p,
+body.dark-mode .booking-card p,
+body.dark-mode .empty-bookings p,
+body.dark-mode .booking-stat-card span,
+body.dark-mode .auth-small-text {
+  color: #e3d1bd;
+}
+
+/* Inputs, selects, and textareas */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background: #211915;
+  color: #fff4e4;
+  border: 1px solid rgba(214, 167, 93, 0.35);
+}
+
+/* Placeholder text */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #bba894;
+}
+
+/* Focus effect */
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+  border-color: #d6a75d;
+  box-shadow: 0 0 0 3px rgba(214, 167, 93, 0.2);
+  outline: none;
+}
+
+/* Booking information / confirmation note */
+body.dark-mode .confirmation-note,
+body.dark-mode .booking-card-footer,
+body.dark-mode .booking-card-footer span,
+body.dark-mode .booking-card-footer strong {
+  color: #f7ead8;
+}
+
+/* Booking card borders */
+body.dark-mode .booking-card-header,
+body.dark-mode .booking-card-footer {
+  border-color: rgba(214, 167, 93, 0.2);
+}
+
+/* Icons and labels */
+body.dark-mode .booking-label,
+body.dark-mode .booking-card-body i,
+body.dark-mode .section-label {
+  color: #d6a75d;
+}
+
+/* Success and error messages */
+body.dark-mode .success-message {
+  background: rgba(46, 125, 50, 0.18);
+  color: #9be39f;
+}
+
+body.dark-mode .error-message {
+  background: rgba(176, 0, 32, 0.18);
+  color: #ff9aaa;
+}
