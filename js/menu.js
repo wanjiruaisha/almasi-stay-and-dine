@@ -292,12 +292,12 @@ function updateWhatsAppLink() {
 
   const orderText = cart
     .map((item) => `${item.name} x${item.quantity} - Ksh ${item.price * item.quantity}`)
-    .join("%0A");
+    .join("\n");
 
   const message =
-    `Hello Almasi Stay & Dine, I would like to order:%0A${orderText}%0A%0ATotal: Ksh ${calculateCartTotal()}`;
+    `Hello Almasi Stay and Dine, I would like to order:\n${orderText}\n\nTotal: Ksh ${calculateCartTotal()}`;
 
-  whatsappOrderBtn.href = `https://wa.me/254713968080?text=${message}`;
+  whatsappOrderBtn.href = `https://wa.me/254713968080?text=${encodeURIComponent(message)}`;
 }
 //Adding slide cart functionality
 function openCart() {
